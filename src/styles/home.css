@@ -1,0 +1,132 @@
+.home-container {
+    background: url("../assets/light.png") no-repeat fixed center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 60vh;
+    width: 100%;
+    position: relative;
+    margin: 10vh 0;
+  
+    
+  }
+
+  .home-container  img {
+    border-radius: 2px;
+    box-shadow: 5px 5px 10px rgb(39, 39, 39);
+  
+  }
+
+  #profile {
+    max-width: 20vw;
+    position: absolute;
+    z-index: 1;
+    top: 8vh;
+    left:8vw;
+  }
+
+  .home--text {
+    background: #c94b4b;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4b134f, #c94b4b);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4b134f, #c94b4b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    text-align: left; 
+    position: absolute;
+    z-index: 0;
+    top: -30px;
+    left:24vw;
+    width: 100vw;
+    height: 350px;
+    padding: 100px;
+
+  }
+
+.home--text h1:nth-child(1){
+    animation:fade-in 3s ease-in-out 1.5s;
+    animation-fill-mode: both;
+}
+
+.home--text h1:nth-child(2){
+    animation:fade-in 3s ease-in-out 2.5s;
+    animation-fill-mode: both;
+}
+
+.home--text h1:nth-child(3){
+    animation:fade-in 3s ease-in-out 3.5s;
+    animation-fill-mode: both;
+}
+
+  #home-img1 {
+    max-width: 18vw;
+    position: absolute;
+    right:25vw;
+    top:1vh;
+ 
+  }
+
+  #home-img2 {
+    max-width: 25vw;
+    position: absolute;
+    right:5vw;
+    top:18vh;
+    z-index: 1;
+  }
+
+  @keyframes fade-in {
+    from {opacity:0%}
+    to{opacity:100%}
+  }
+
+
+
+
+
+@media (max-width: 800px) {
+
+    .home-container {
+        margin-bottom: 50px;
+       
+    }
+    #profile {
+        max-width: 230px;
+        top: 23vh;
+         }
+   
+    #home-img1 {
+        display: none;
+      }
+    
+    #home-img2 {
+        display: none;
+      }
+
+      .home--text {
+        margin-left: 7vw;
+        width: 80vw;
+        text-align: left;
+        padding-top:15%;
+        padding-right: 20px;
+      }
+      .home--text h1{
+        bottom: 30vh;
+    
+        padding-left: 25px;
+
+}
+}
+
+@media (max-width: 500px){
+    .home--text h1{
+        bottom: 20vh;
+        line-height: 1.5em;
+        font-size: 1.5em;
+        padding-left: 25px;
+
+}
+
+#profile {
+    max-width: 200px;
+
+     }
+  
+}

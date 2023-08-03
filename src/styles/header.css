@@ -1,0 +1,100 @@
+
+header {
+    height: 110px;
+    display: flex;
+    align-items: center;
+    padding-block: 10px;
+    font-size: 15px;
+    margin: 0 3vw 30px
+  }
+
+  header .site-logo {
+    margin-right:auto;
+    font-weight: 700;
+    font-size: 2.5em;
+    animation:fade-in-first 2s ease-in-out;
+    animation-fill-mode: both;
+    
+  }
+
+
+.qin{
+  font-size: large;
+  font-weight: 600;
+  color:rgb(122, 122, 119)
+}
+  header a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 15px;
+    font-weight: 600;
+  }
+  
+  .lang {
+    background-color:rgba(248, 248, 244, 0.918);
+    cursor:pointer;
+    color: var(--decoColor);
+    margin-right:20px;
+    padding:6px 5px;
+    border-radius: 50%;
+    border: 1px 1px inset black;
+    font-weight: 600;
+  }
+
+  .lang:hover {
+   background-color: var(--textColor);
+   color: white;
+  
+  }
+ 
+  
+
+
+
+nav {
+    display: flex;
+    justify-content: space-around;
+
+  }
+
+
+  .menu {
+    width: 30px;
+    display: none;
+  }
+
+  .menu:hover {
+    cursor: pointer;
+  }
+
+
+  @keyframes fade-in-first {
+    from {opacity:0%; margin-left:0;}
+    to {opacity:100%; margin-left:50px}
+  }
+
+
+  @media (max-width: 800px) {
+    nav {
+      display: none;
+  
+    }
+    header .site-logo {
+      font-weight: 700;
+      font-size: 1.8em;
+      padding-left: 0;
+      padding-top: 50px;
+    }
+    .menu {
+      width: 30px;
+      display: inline;
+      margin: 0 10px;
+      padding-bottom: 100px;
+    }
+
+    .lang {
+      position: absolute;
+      top:21px;
+      right:40px
+    }
+  }

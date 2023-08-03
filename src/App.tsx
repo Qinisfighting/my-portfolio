@@ -16,6 +16,8 @@ import { RouterProvider,
   /* */
   <Route path="/" element={<Layout />}>  
       <Route index  element={<Home />} />
+      
+      
       <Route path='about' element={<About />} />
       <Route path='works' element={<Works />} loader={worksLoader} errorElement={<Error />} />
       <Route path="works/:id" element={<WorkDetail />} loader={WorkDetailLoader} errorElement={<Error />}/>       

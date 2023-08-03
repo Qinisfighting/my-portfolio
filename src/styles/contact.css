@@ -1,0 +1,121 @@
+
+.contact-container {
+text-align: left;
+width: 60vw;
+margin:30px auto 250px;
+height: 50vh;
+
+}
+
+.form-container {
+ text-align: left;
+ width:100%;
+ text-align: center;
+
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top > h1 {
+    padding: 0 20px;
+    color:  #dbcea2;
+    border-left: 1px solid gray;
+}
+
+.social { 
+    
+    display:flex;
+    column-gap: 10px;
+    margin:0 5vw 10px 4vw;
+    padding-left: 30px;
+
+}
+
+.social > a > img {
+    width: 22px; 
+}
+
+.form {
+    padding: 40px 30px;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #FFEFBA;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow: 2px 8px 20px 0 rgba(164, 165, 180, 0.199);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    
+}
+
+.form--input {
+    font-size: 1em;  
+    width: 100%;
+    margin-bottom: 30px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding: 10px;
+    
+    
+}
+
+.form--input:focus{
+    outline: none;
+}
+
+textarea {
+    font-family: "Inter", sans-serif;	
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1em;
+  
+}
+
+textarea:focus{
+    outline: none;
+}
+
+.form--submit {
+    width: 100%;
+    padding: 7px;
+    border-radius: 5px;
+    color: white;
+    background-color:  var(--decoColor);
+    border: none;   
+    cursor: pointer; 
+    margin-top: 50px;
+    font-size: 1.1em;
+}
+
+.form--submit:hover{
+    transform: translate(1px, 1px);
+}
+
+@media (max-width: 800px) {
+    .contact-container {
+        width:80vw
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .top{
+        flex-direction: column;
+        align-items: flex-start;
+     }
+     .social {
+        padding: 0;
+     }
+}
+
