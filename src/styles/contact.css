@@ -22,7 +22,7 @@ height: 50vh;
 
 .top > h1 {
     padding: 0 20px;
-    color:  #dbcea2;
+    color:  #e0cf97;
     border-left: 1px solid gray;
 }
 
@@ -30,13 +30,18 @@ height: 50vh;
     
     display:flex;
     column-gap: 10px;
-    margin:0 5vw 10px 4vw;
+    margin:0 4vw;
     padding-left: 30px;
 
 }
 
 .social > a > img {
-    width: 22px; 
+    width: 20px; 
+
+}
+
+.social > a > img:hover { 
+    filter: invert(23%) sepia(36%) saturate(1929%) hue-rotate(298deg) brightness(65%) contrast(90%)
 }
 
 .form {
@@ -107,7 +112,7 @@ textarea:focus{
     }
 
     h1 {
-        font-size: 1.5em;
+        font-size: 1.4em;
     }
 
     .top{
@@ -115,7 +120,12 @@ textarea:focus{
         align-items: flex-start;
      }
      .social {
-        padding: 0;
+        align-self:flex-end;
+        padding-bottom: 5px;
      }
+     .social > a > img {
+        width: 17px; 
+    
+    }
 }
 

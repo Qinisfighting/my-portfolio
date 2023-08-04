@@ -8,9 +8,9 @@ export default function Home(): JSX.Element {
            <img src={profile} id="profile" alt="profile"/>
             <div className="home--text"> 
                
-                <h1>codieren,</h1>
-                <h1>designen, </h1>
-                <h1>& Apps entwickeln. </h1>
+                <h1>Ich <br/>codiere,</h1>
+                <h1>designe,</h1>
+                <h1>& entwickle Apps. </h1>
             </div>
             <div className="home--img">
                 <img src={coding} id="home-img1" alt="coding"/>

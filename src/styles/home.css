@@ -23,7 +23,7 @@
     position: absolute;
     z-index: 1;
     top: 8vh;
-    left:8vw;
+    left:7vw;
   }
 
   .home--text {
@@ -34,12 +34,13 @@
     position: absolute;
     z-index: 0;
     top: -30px;
-    left:24vw;
+    left:23vw;
     width: 100vw;
     height: 350px;
     padding: 100px;
 
   }
+
 
 .home--text h1:nth-child(1){
     animation:fade-in 3s ease-in-out 1.5s;
@@ -54,6 +55,12 @@
 .home--text h1:nth-child(3){
     animation:fade-in 3s ease-in-out 3.5s;
     animation-fill-mode: both;
+}
+
+.home--text h1:nth-child(3) > span {
+    font-size: .5em;
+    font-weight: 400;
+    color:gray
 }
 
   #home-img1 {
@@ -109,7 +116,7 @@
       }
       .home--text h1{
         bottom: 30vh;
-    
+        font-size: 1.7em;
         padding-left: 25px;
 
 }
@@ -119,7 +126,7 @@
     .home--text h1{
         bottom: 20vh;
         line-height: 1.5em;
-        font-size: 1.5em;
+        font-size: 1.4em;
         padding-left: 25px;
 
 }

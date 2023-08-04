@@ -36,14 +36,14 @@ export default function Contact() {
   return (
     <div className="contact-container">
       <div className="top">
-      <h1>Send me a message</h1>
+      <h1>Schick mir eine Nachricht</h1>
       <div className="social"> 
-              <a href="https://www.linkedin.com/in/yanqinhq/"><img src={linkedin} alt="linkedin" /></a>
-              <a href="https://www.xing.com/profile/Yanqin_Qualmann/cv"><img src={xing} alt="xing" /></a>
-              <a href="https://github.com/Qinisfighting"><img src={github} alt="github"/></a>
-              <a href="https://www.facebook.com/ichbinQin"><img src={fb} alt="facebook" /></a>
-              <a href="https://twitter.com/ichbinQin"><img src={tt} alt="twitter" /></a>
-              <a href="mailto:yq.qualmann@gmail.com"><img src={gmail} alt="gmail" /></a>         
+              <a href="https://www.linkedin.com/in/yanqinhq/" target="_blank"><img src={linkedin} alt="linkedin" /></a>
+              <a href="https://www.xing.com/profile/Yanqin_Qualmann/cv" target="_blank"><img src={xing} alt="xing" /></a>
+              <a href="https://github.com/Qinisfighting" target="_blank"><img src={github} alt="github"/></a>
+              <a href="https://www.facebook.com/ichbinQin" target="_blank"><img src={fb} alt="facebook" /></a>
+              <a href="https://twitter.com/ichbinQin" target="_blank"><img src={tt} alt="twitter" /></a>
+              <a href="mailto:yq.qualmann@gmail.com" target="_blank"><img src={gmail} alt="gmail" /></a>         
           </div>
       </div>
       
@@ -75,7 +75,7 @@ export default function Contact() {
             onChange={handleChange}
             required
           /> 
-            <button className="form--submit">SEND</button>        
+            <button className="form--submit">SENDEN</button>        
           </form>
       </div >
     
