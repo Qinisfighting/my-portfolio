@@ -5,7 +5,7 @@ import linkedin from "../assets/linkedin.png"
 import xing from "../assets/xing.png"
 import tt from "../assets/tt.png"
 import github from "../assets/github.png"
-import { useOutletContext } from "react-router-dom";
+import { useLangContext } from "../components/Layout";
 
 
 interface FormData {
@@ -15,7 +15,7 @@ interface FormData {
 }
 
 export default function Contact() {
-  const [isGerman] = useOutletContext();
+  const {isGerman} = useLangContext();
   const [formData, setFormData] = useState<FormData>({
     name: "",
     email: "",

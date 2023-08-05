@@ -1,7 +1,7 @@
 import profile from "../../src/assets/profile.png";
 import coding from "../../src/assets/coding.png";
 import design from "../../src/assets/design.jpg";
-import { useOutletContext } from "react-router-dom";
+import { useLangContext } from "../components/Layout";
 
 
 
@@ -9,7 +9,7 @@ import { useOutletContext } from "react-router-dom";
  const Home= () => {
 
 
-    const [isGerman] = useOutletContext();
+    const {isGerman} = useLangContext();
     return (
         <div className="home-container">
            <img src={profile} id="profile" alt="profile"/>
