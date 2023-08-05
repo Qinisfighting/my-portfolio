@@ -37,7 +37,10 @@
     left:23vw;
     width: 100vw;
     height: 350px;
-    padding: 100px;
+    padding: 25px 7vw;
+   
+
+    
 
   }
 
@@ -110,24 +113,21 @@
       .home--text {
         margin-left: 7vw;
         width: 80vw;
-        text-align: left;
-        padding-top:15%;
-        padding-right: 20px;
+        font-size: 1.2em;
+        padding-left:23vw;
+        padding-top: 60px;
       }
-      .home--text h1{
-        bottom: 30vh;
-        font-size: 1.7em;
-        padding-left: 25px;
-
-}
+      
 }
 
 @media (max-width: 500px){
     .home--text h1{
         bottom: 20vh;
-        line-height: 1.5em;
-        font-size: 1.4em;
-        padding-left: 25px;
+        line-height: 1.3em;
+        font-size: 1.3em;
+        padding-left: 13vw;
+        padding-right:5vw
+        
 
 }
 

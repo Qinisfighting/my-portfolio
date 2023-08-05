@@ -42,7 +42,8 @@ export default function Header() {
         width:"100%",     
     }
 
-    const pendingStyles: PendingStyles = {
+    //to shut up typescript error
+    const pendingStyles: PendingStyles = { 
         borderTop: "",
         borderBottom: "",
         width:"",
@@ -71,7 +72,7 @@ export default function Header() {
 
     return (
         <header>
-            <Link to='/' className="site-logo">Moin! Ich bin Qin <span className="qin">/'tʃɪn/. </span>
+            <Link to='/' className="site-logo">Moin! Ich bin Qin<span className="qin"> /'tʃɪn/. </span>
   </Link>
             <button className="lang">EN</button> 
             <img src={menu} alt="menu" className="menu" onClick={()=>setIsMenu(prev=>!prev)}/>

@@ -13,23 +13,27 @@ header {
  }
 
 .site-logo {
-    margin-right:auto;
-    font-weight: 700;
-    font-size: 2.5em;
+    font-family: 'Rock Salt', cursive;
+    margin-right:auto; 
+    font-size: 1.9em;
     animation:fade-in-first 2s ease-in-out;
     animation-fill-mode: both;
+    text-shadow: 1px 1px 5px black;
     
   }
 
   .site-logo:hover {
    transform: translateY(1.3px);
+   
    }
   
 
 .qin{
-  font-size: large;
-  font-weight: 600;
-  color:rgb(122, 122, 119)
+  font-size: .5em;
+  font-weight: 400;
+  color:rgb(122, 122, 119);
+  font-family: var(--mainFont);	
+  text-shadow:none
 }
   header a {
     text-decoration: none;
@@ -80,7 +84,7 @@ nav > a:hover {
 
   @keyframes fade-in-first {
     from {opacity:0%; margin-left:0;}
-    to {opacity:100%; margin-left:50px}
+    to {opacity:100%; margin-left:28px}
   }
 
 
@@ -91,14 +95,22 @@ nav > a:hover {
     }
     header .site-logo {
       font-weight: 700;
-      font-size: 1.8em;
+      font-size: 1.4em;
       padding-left: 0;
-      padding-top: 55px;
+      padding-top: 70px;
+      margin-right:0; 
+    
+    }
+
+    header .site-logo >span {
+      padding: 0
     }
     .menu {
+      position: absolute;
       width: 30px;
       display: inline;
-      margin-right: 10px;
+      top:21px;
+      right:25px;
       padding-bottom: 100px;
     }
     .menu:hover{
@@ -112,7 +124,7 @@ nav > a:hover {
       right:45px
     }
     .menuNav {
-      background: rgba(245, 222, 179, 0.945);
+      background: rgba(245, 222, 179, 0.973);
       border-radius: 5px;
       display: flex;
       flex-direction: column;
@@ -128,10 +140,16 @@ nav > a:hover {
       box-shadow: 1px 1px 5px black;
       align-items: flex-end;
       font-size: small;
+      animation: expand-fade-in .5s ease-in;
       
     }
     .menuNav > a{
       color:var(--textColor);
+    }
+
+    @keyframes expand-fade-in {
+      from {clip-path: circle(0% at 100% 0%)}
+      to {clip-path: circle(100% at 50% 50%)}
     }
 
   }
