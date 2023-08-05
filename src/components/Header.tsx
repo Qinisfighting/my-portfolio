@@ -92,16 +92,16 @@ export default function Header() {
             </div>
            :
             <nav>
-                <NavLink to='/' style={({isActive}: {isActive: boolean}) => isActive ? activeStyles : null}>
+                <NavLink to='/' style={({isActive, isPending}: {isActive: boolean; isPending: boolean}) => isActive && !isPending ? activeStyles : pendingStyles}>
                    HOME
                 </NavLink>
-                <NavLink to='about' style={({isActive}: {isActive: boolean}) => isActive ? activeStyles : null}>
+                <NavLink to='about' style={({isActive, isPending}: {isActive: boolean; isPending: boolean}) => isActive && !isPending ? activeStyles : pendingStyles}>
                     ICH
                 </NavLink>
-                <NavLink to='works' style={({isActive}: {isActive: boolean}) => isActive ? activeStyles : null}>
+                <NavLink to='works' style={({isActive, isPending}: {isActive: boolean; isPending: boolean}) => isActive && !isPending ? activeStyles : pendingStyles}>
                    PROJEKT
                 </NavLink>   
-                <NavLink to='contact' className="login-link" style={({isActive}: {isActive: boolean}) => isActive ? activeStyles : null}>
+                <NavLink to='contact' className="login-link" style={({isActive, isPending}: {isActive: boolean; isPending: boolean}) => isActive && !isPending ? activeStyles : pendingStyles}>
                    KONTAKT
                 </NavLink>    
             </nav>
