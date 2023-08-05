@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef  } from "react"
+import { useState, useEffect, useRef } from "react"
 import { Link, NavLink } from "react-router-dom"
 import menu from "../../src/assets/menu.png"
 import home from "../../src/assets/home.png"
@@ -16,16 +16,22 @@ interface ActiveStylesMenu {
     borderTop: string;
     borderBottom: string;
     width:string;
+    backgroundColor: string
 }
-
+ //to shut up typescript error warning
 interface PendingStyles {
     borderTop: string;
     borderBottom: string;
     width:string;
 }
 
+interface langProps {
+    isGerman: boolean;
+    toggleGerman: () => void
 
-export default function Header() {
+}
+
+const Header: React.FC<langProps> = ({isGerman, toggleGerman}) => {
     const [isMenu, setIsMenu] = useState<boolean>(false);
     const menuRef = useRef<HTMLDivElement>(null);
     
@@ -39,10 +45,11 @@ export default function Header() {
     const activeStylesMenu: ActiveStylesMenu = {
         borderTop: "2px dotted white",
         borderBottom: "2px dotted white",
-        width:"100%",     
+        width:"100%",  
+        backgroundColor: "rgba(223, 201, 161, 0.973)"   
     }
 
-    //to shut up typescript error
+   
     const pendingStyles: PendingStyles = { 
         borderTop: "",
         borderBottom: "",
@@ -72,9 +79,9 @@ export default function Header() {
 
     return (
         <header>
-            <Link to='/' className="site-logo">Moin! Ich bin Qin<span className="qin"> /'tʃɪn/. </span>
+            <Link to='/' className="site-logo">{isGerman?"Moin! Ich bin Qin":"Hey! I am Qin"}<span className="qin"> /'tʃɪn/. </span>
   </Link>
-            <button className="lang">EN</button> 
+            <button className="lang" onClick={toggleGerman}>{isGerman?"EN":"DE"}</button> 
             <img src={menu} alt="menu" className="menu" onClick={()=>setIsMenu(prev=>!prev)}/>
            {isMenu ?
             <div className="menuNav" ref={menuRef}>
@@ -82,13 +89,13 @@ export default function Header() {
                    HOME <img src={home} alt="home" width="18px" />
                 </NavLink> 
                 <NavLink to='about' style={({isActive, isPending}: {isActive: boolean; isPending: boolean}) => isActive && !isPending ? activeStylesMenu : pendingStyles}>
-                  ICH <img src={smile} alt="smile" width="18px" />
+                {isGerman?"ÜBER MICH":"ABOUT ME"} <img src={smile} alt="smile" width="18px" />
                 </NavLink>
                 <NavLink to='works' style={({isActive, isPending}: {isActive: boolean; isPending: boolean}) => isActive && !isPending ? activeStylesMenu : pendingStyles}>
-                   PROJEKT <img src={project} alt="project" width="18px" />
+                {isGerman?"PROJEKT":"PROJECT"} <img src={project} alt="project" width="18px" />
                 </NavLink>   
                 <NavLink to='contact' className="login-link" style={({isActive, isPending}: {isActive: boolean; isPending: boolean}) => isActive && !isPending ? activeStylesMenu : pendingStyles}>
-                   KONTAKT <img src={mail} alt="mail" width="18px" />
+                {isGerman?"KONTAKT":"CONTACT"} <img src={mail} alt="mail" width="18px" />
                 </NavLink>    
             </div>
            :
@@ -97,13 +104,13 @@ export default function Header() {
                    HOME
                 </NavLink>
                 <NavLink to='about' style={({isActive, isPending}: {isActive: boolean; isPending: boolean}) => isActive && !isPending ? activeStyles : pendingStyles}>
-                    ICH
+                {isGerman?"ÜBER MICH":"ABOUT ME"}
                 </NavLink>
                 <NavLink to='works' style={({isActive, isPending}: {isActive: boolean; isPending: boolean}) => isActive && !isPending ? activeStyles : pendingStyles}>
-                   PROJEKT
+                {isGerman?"PROJEKT":"PROJECT"}
                 </NavLink>   
                 <NavLink to='contact' className="login-link" style={({isActive, isPending}: {isActive: boolean; isPending: boolean}) => isActive && !isPending ? activeStyles : pendingStyles}>
-                   KONTAKT
+                {isGerman?"KONTAKT":"CONTACT"}
                 </NavLink>    
             </nav>
         } 
@@ -111,3 +118,6 @@ export default function Header() {
     )
 
 }
+
+
+export default Header 

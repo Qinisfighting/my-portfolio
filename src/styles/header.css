@@ -19,6 +19,7 @@ header {
     animation:fade-in-first 2s ease-in-out;
     animation-fill-mode: both;
     text-shadow: 1px 1px 5px black;
+    letter-spacing: 1px;
     
   }
 
@@ -109,7 +110,7 @@ nav > a:hover {
       position: absolute;
       width: 30px;
       display: inline;
-      top:21px;
+      top: 22px;
       right:25px;
       padding-bottom: 100px;
     }
@@ -142,14 +143,15 @@ nav > a:hover {
       font-size: small;
       animation: expand-fade-in .5s ease-in;
       
+      
     }
     .menuNav > a{
       color:var(--textColor);
     }
 
     @keyframes expand-fade-in {
-      from {clip-path: circle(0% at 100% 0%)}
-      to {clip-path: circle(100% at 50% 50%)}
+      from {clip-path: circle(0% at 100% 0%); opacity:0%}
+      to {clip-path: circle(100% at 50% 50%); opacity:100%}
     }
 
   }

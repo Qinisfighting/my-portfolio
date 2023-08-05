@@ -5,6 +5,7 @@ import linkedin from "../assets/linkedin.png"
 import xing from "../assets/xing.png"
 import tt from "../assets/tt.png"
 import github from "../assets/github.png"
+import { useOutletContext } from "react-router-dom";
 
 
 interface FormData {
@@ -14,6 +15,7 @@ interface FormData {
 }
 
 export default function Contact() {
+  const [isGerman] = useOutletContext();
   const [formData, setFormData] = useState<FormData>({
     name: "",
     email: "",
@@ -36,7 +38,7 @@ export default function Contact() {
   return (
     <div className="contact-container">
       <div className="top">
-      <h1>Schick mir eine Nachricht</h1>
+      <h1>{isGerman?"Schick mir eine Nachricht" : "Send me a message"}</h1>
       <div className="social"> 
               <a href="https://www.linkedin.com/in/yanqinhq/" target="_blank"><img src={linkedin} alt="linkedin" /></a>
               <a href="https://www.xing.com/profile/Yanqin_Qualmann/cv" target="_blank"><img src={xing} alt="xing" /></a>
@@ -75,7 +77,7 @@ export default function Contact() {
             onChange={handleChange}
             required
           /> 
-            <button className="form--submit">SENDEN</button>        
+            <button className="form--submit">{isGerman?"SENDEN" : "SEND"}</button>        
           </form>
       </div >
     
