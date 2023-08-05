@@ -18,6 +18,12 @@ interface ActiveStylesMenu {
     width:string;
 }
 
+interface PendingStyles {
+    borderTop: string;
+    borderBottom: string;
+    width:string;
+}
+
 
 export default function Header() {
     const [isMenu, setIsMenu] = useState<boolean>(false);
@@ -33,8 +39,14 @@ export default function Header() {
     const activeStylesMenu: ActiveStylesMenu = {
         borderTop: "2px dotted white",
         borderBottom: "2px dotted white",
-        width:"100%",
-        
+        width:"100%",     
+    }
+
+    const pendingStyles: PendingStyles = {
+        borderTop: "",
+        borderBottom: "",
+        width:"",
+
     }
 
     useEffect(() => {
@@ -65,16 +77,16 @@ export default function Header() {
             <img src={menu} alt="menu" className="menu" onClick={()=>setIsMenu(prev=>!prev)}/>
            {isMenu ?
             <div className="menuNav" ref={menuRef}>
-                <NavLink to='/' style={({isActive}: {isActive: boolean}) => isActive ? activeStylesMenu : null}>
+                <NavLink to='/' style={({isActive, isPending}: {isActive: boolean; isPending: boolean}) => isActive && !isPending ? activeStylesMenu : pendingStyles}>
                    HOME <img src={home} alt="home" width="18px" />
                 </NavLink> 
-                <NavLink to='about' style={({isActive}: {isActive: boolean}) => isActive ? activeStylesMenu : null}>
+                <NavLink to='about' style={({isActive, isPending}: {isActive: boolean; isPending: boolean}) => isActive && !isPending ? activeStylesMenu : pendingStyles}>
                   ICH <img src={smile} alt="smile" width="18px" />
                 </NavLink>
-                <NavLink to='works' style={({isActive}: {isActive: boolean}) => isActive ? activeStylesMenu : null}>
+                <NavLink to='works' style={({isActive, isPending}: {isActive: boolean; isPending: boolean}) => isActive && !isPending ? activeStylesMenu : pendingStyles}>
                    PROJEKT <img src={project} alt="project" width="18px" />
                 </NavLink>   
-                <NavLink to='contact' className="login-link" style={({isActive}: {isActive: boolean}) => isActive ? activeStylesMenu : null}>
+                <NavLink to='contact' className="login-link" style={({isActive, isPending}: {isActive: boolean; isPending: boolean}) => isActive && !isPending ? activeStylesMenu : pendingStyles}>
                    KONTAKT <img src={mail} alt="mail" width="18px" />
                 </NavLink>    
             </div>
