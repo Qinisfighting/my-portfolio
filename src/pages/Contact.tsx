@@ -80,9 +80,7 @@ export default function Contact() {
             <button className="form--submit">{isGerman?"SENDEN" : "SEND"}</button>        
           </form>
       </div >
-    
-          
-          
+     
       </div>
   
   );
