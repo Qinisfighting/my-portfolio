@@ -21,13 +21,14 @@ export default function Layout() {
     <div className="site-wrapper">
       <Header isGerman={isGerman} toggleGerman={() => setIsGerman(prev => !prev)} />
       <main>
-        <Outlet context = {{isGerman} satisfies ContextType} /> console.log(useOutletContext)
+        <Outlet context = {{isGerman} satisfies ContextType} /> 
       </main>
       <Footer />
     </div>
   );
 }
 
+// eslint-disable-next-line react-refresh/only-export-components
 export function useLangContext() {
   return useOutletContext<ContextType>();
 }

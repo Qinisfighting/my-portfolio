@@ -1,4 +1,4 @@
-//import { useState } from 'react'
+//import { useState, useEffect } from 'react'
 import { RouterProvider,
   createBrowserRouter,
   createRoutesFromElements,
@@ -15,7 +15,7 @@ import { RouterProvider,
  const router = createBrowserRouter(createRoutesFromElements(
   /* */
   <Route path="/" element={<Layout />}>  
-      <Route index  element={<Home />} />
+      <Route index  element={<Home  />} />
       <Route path='about' element={<About />} />
       <Route path='works' element={<Works />} loader={worksLoader} errorElement={<Error />} />
       <Route path="works/:id" element={<WorkDetail />} loader={WorkDetailLoader} errorElement={<Error />}/>       
@@ -30,6 +30,8 @@ import { RouterProvider,
   
   
   function App() {
+     
+
   return (
   <RouterProvider router={router}/>
   )
