@@ -123,7 +123,7 @@ nav > a:hover {
       position: absolute;
       width: 30px;
       display: inline;
-      top: 220px;
+      top: 255px;
       right:15px;
       
 
@@ -148,12 +148,12 @@ nav > a:hover {
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
-      row-gap: 10px;
+      row-gap: 20px;
       position: absolute;
       top:9vh;
       right:0;
-      height:265px;
-      width:120px;
+      height:300px;
+      width:140px;
       z-index: 3;
       border: none;
       margin-right: 50px;
