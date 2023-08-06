@@ -74,6 +74,10 @@ nav > a:hover {
     display: none;
   }
 
+  .back {
+    width: 30px;
+    display:none;
+  }
   .menu:hover {
     cursor: pointer;
   }
@@ -114,10 +118,24 @@ nav > a:hover {
       right:25px;
       padding-bottom: 100px;
     }
+
+    .back {
+      position: absolute;
+      width: 30px;
+      display: inline;
+      top: 220px;
+      right:15px;
+      
+
+    }
     .menu:hover{
       filter: brightness(110%);
     }
+    .back:hover {
+      filter: brightness(90%);
+      cursor: pointer;
 
+    }
 
     .lang {
       position: absolute;
@@ -129,11 +147,12 @@ nav > a:hover {
       border-radius: 5px;
       display: flex;
       flex-direction: column;
-      justify-content: space-evenly;
+      justify-content: flex-start;
+      row-gap: 10px;
       position: absolute;
       top:9vh;
       right:0;
-      height:30vh;
+      height:265px;
       width:120px;
       z-index: 3;
       border: none;
@@ -143,11 +162,14 @@ nav > a:hover {
       font-size: small;
       animation: expand-fade-in .5s ease-in;
       
-      
     }
     .menuNav > a{
       color:var(--textColor);
+      padding: 10px;
+     
     }
+
+    
 
     @keyframes expand-fade-in {
       from {clip-path: circle(0% at 100% 0%); opacity:0%}
