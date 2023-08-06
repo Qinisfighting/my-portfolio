@@ -30,13 +30,13 @@ html {
     -ms-overflow-style: none;
     scrollbar-width: none;
     min-height: 85vh;
-    color:white
+    color:white;
        
   }
   
   body::-webkit-scrollbar {
-      display: none;
-  }
+    display: none;
+}
   
   
   a {

@@ -22,7 +22,7 @@
     max-width: 20vw;
     position: absolute;
     z-index: 1;
-    top: 8vh;
+    top: 6vh;
     left:7vw;
   }
 
@@ -35,7 +35,7 @@
     z-index: 0;
     top: -30px;
     left:23vw;
-    width: 77vw;
+    width: 77%;
     height: 350px;
     padding: 25px 7vw;
    
@@ -95,11 +95,12 @@
 
     .home-container {
         margin-bottom: 50px;
+      
        
     }
     #profile {
-        max-width: 230px;
-        top: 23vh;
+        max-width: 250px;
+        top: 15vh;
          }
    
     #home-img1 {
@@ -111,29 +112,33 @@
       }
 
       .home--text {
-        margin-left: 7vw;
-        width: 80vw;
         font-size: 1.2em;
-        padding-left:23vw;
-        padding-top: 60px;
+        padding-left:35vw;
+        padding-top: 20px;
+        
       }
       
 }
 
 @media (max-width: 500px){
+  .home--text {
+    padding-left:30%;
+    padding-top: 35px;
+  }
+
     .home--text h1{
         bottom: 20vh;
-        line-height: 1.3em;
-        font-size: 1.3em;
+        line-height: 1.4em;
+        font-size: 1.2em;
         padding-left: 13vw;
-        padding-right:5vw
+        padding-right:1.5vw
         
 
 }
 
 #profile {
     max-width: 200px;
-    top: 25vh;
+    top: 23vh;
 
      }
   

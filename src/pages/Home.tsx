@@ -21,9 +21,9 @@ import { useLangContext } from "../components/Layout";
               </div>
               :
               <div className="home--text"> 
-                  <h1>I code</h1>
-                  <h1>I design, </h1>
-                  <h1> &<br /> I develope apps. </h1>
+                  <h1>I code,</h1>
+                  <h1>design, </h1>
+                  <h1> &<br />develope apps. </h1>
               </div>
                 }
            
