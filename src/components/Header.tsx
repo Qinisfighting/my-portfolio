@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react"
 import { Link, NavLink } from "react-router-dom"
 import menu from "../../src/assets/menu.png"
+import back from "../../src/assets/back.png"
 import home from "../../src/assets/home.png"
 import smile from "../../src/assets/smile.png"
 import project from "../../src/assets/project.png"
@@ -16,7 +17,8 @@ interface ActiveStylesMenu {
     borderTop: string;
     borderBottom: string;
     width:string;
-    backgroundColor: string
+    backgroundColor: string;
+    borderRadius: string
 }
  //to shut up typescript error warning
 interface PendingStyles {
@@ -46,7 +48,8 @@ const Header: React.FC<langProps> = ({isGerman, toggleGerman}) => {
         borderTop: "2px dotted white",
         borderBottom: "2px dotted white",
         width:"100%",  
-        backgroundColor: "rgba(223, 201, 161, 0.973)"   
+        backgroundColor: "rgba(223, 201, 161, 0.973)" ,
+        borderRadius: "5px" 
     }
 
    
@@ -61,7 +64,7 @@ const Header: React.FC<langProps> = ({isGerman, toggleGerman}) => {
         const handler = (e: MouseEvent) => {
             if(menuRef.current != null && !menuRef.current.contains(e.target as Node)){
             setIsMenu(false)
-            console.log(menuRef.current);
+          //  console.log(menuRef.current);
          }  
         }
 
@@ -74,17 +77,24 @@ const Header: React.FC<langProps> = ({isGerman, toggleGerman}) => {
 
     })
 
-
+    
+            
 
 
     return (
-        <header>
+        <header ref={menuRef}>
             <Link to='/' className="site-logo">{isGerman?"Moin! Ich bin Qin":"Hey! I am Qin"}<span className="qin"> /'tʃɪn/. </span>
   </Link>
-            <button className="lang" onClick={toggleGerman}>{isGerman?"EN":"DE"}</button> 
-            <img src={menu} alt="menu" className="menu" onClick={()=>setIsMenu(prev=>!prev)}/>
+  
+            <button  className="lang" onClick={toggleGerman}>{isGerman?"EN":"DE"}</button> 
+            
+             <img src={menu} alt="menu" className="menu" onClick={()=>setIsMenu(true)}/>
+          
+        
+            
            {isMenu ?
-            <div className="menuNav" ref={menuRef}>
+            <div className="menuNav"  ref={menuRef}>
+                
                 <NavLink to='/' style={({isActive, isPending}: {isActive: boolean; isPending: boolean}) => isActive && !isPending ? activeStylesMenu : pendingStyles}>
                    HOME <img src={home} alt="home" width="18px" />
                 </NavLink> 
@@ -96,7 +106,8 @@ const Header: React.FC<langProps> = ({isGerman, toggleGerman}) => {
                 </NavLink>   
                 <NavLink to='contact' className="login-link" style={({isActive, isPending}: {isActive: boolean; isPending: boolean}) => isActive && !isPending ? activeStylesMenu : pendingStyles}>
                 {isGerman?"KONTAKT":"CONTACT"} <img src={mail} alt="mail" width="18px" />
-                </NavLink>    
+                </NavLink>   
+                <img src={back} alt="back" className="back" onClick={()=>setIsMenu(!isMenu)}/>
             </div>
            :
             <nav>
