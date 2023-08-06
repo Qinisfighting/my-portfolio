@@ -4,7 +4,7 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    min-height: 100%;
+    min-height: 50vh;
     width: 100%;
     position: relative;
     margin: 10vh 0;
@@ -35,7 +35,7 @@
     z-index: 0;
     top: -30px;
     left:23vw;
-    width: 100%;
+    width: 77vw;
     height: 350px;
     padding: 25px 7vw;
    
