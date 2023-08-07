@@ -6,6 +6,8 @@ import xing from "../assets/xing.png"
 import tt from "../assets/tt.png"
 import github from "../assets/github.png"
 import { useLangContext } from "../components/Layout";
+import { db } from '../api';
+import { addDoc, collection } from "firebase/firestore"  
 
 
 interface FormData {
@@ -22,6 +24,8 @@ export default function Contact() {
     content: "",
   });
 
+  const userContactRef = collection(db, "contactData")
+
   function handleChange(e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) {
     const { name, value } = e.target;
     setFormData((prev) => ({
@@ -32,8 +36,13 @@ export default function Contact() {
 
   async function handleSubmit(e: FormEvent) {
     e.preventDefault();
-    // Handle form submission
-    console.log(formData)
+    addDoc(userContactRef, formData)
+    setFormData({
+      name: "",
+      email: "",
+      content: "",
+    })
+    alert(isGerman?"Danke für Ihre Nachricht. Ich melde mich umgehend.":"Thank for your message. I'll get back to you as soon as possible.")
   }
 
   return (
@@ -60,6 +69,7 @@ export default function Contact() {
               name="name"
               value={formData.name}
               onChange={handleChange}
+              onFocus={(e) => e.target.value = ""}
               required
             />       
             <input
@@ -69,6 +79,7 @@ export default function Contact() {
               name="email"
               value={formData.email}
               onChange={handleChange}
+              onFocus={(e) => e.target.value = ""}
               required
             />
           <textarea  
@@ -76,6 +87,7 @@ export default function Contact() {
             name="content"
             value={formData.content}
             onChange={handleChange}
+            onFocus={(e) => e.target.value = ""}
             required
           /> 
             <button className="form--submit">{isGerman?"SENDEN" : "SEND"}</button>        

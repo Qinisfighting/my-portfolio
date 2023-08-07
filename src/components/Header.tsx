@@ -107,14 +107,14 @@ const Header: React.FC<langProps> = ({isGerman, toggleGerman}) => {
                 <NavLink to='contact' className="login-link" style={({isActive, isPending}: {isActive: boolean; isPending: boolean}) => isActive && !isPending ? activeStylesMenu : pendingStyles}>
                 {isGerman?"KONTAKT":"CONTACT"} <img src={mail} alt="mail" width="18px" />
                 </NavLink>   
-                <img src={back} alt="back" className="back" onClick={()=>setIsMenu(!isMenu)}/>
+                <img src={back} alt="back" className="back" onClick={()=>setIsMenu(false)}/>
             </div>
            :
             <nav>
-                <NavLink to='/' style={({isActive, isPending}: {isActive: boolean; isPending: boolean}) => isActive && !isPending ? activeStyles : pendingStyles}>
+                <NavLink to='/'  style={({isActive, isPending}: {isActive: boolean; isPending: boolean}) => isActive && !isPending ? activeStyles : pendingStyles}>
                    HOME
                 </NavLink>
-                <NavLink to='about' style={({isActive, isPending}: {isActive: boolean; isPending: boolean}) => isActive && !isPending ? activeStyles : pendingStyles}>
+                <NavLink to='about'  style={({isActive, isPending}: {isActive: boolean; isPending: boolean}) => isActive && !isPending ? activeStyles : pendingStyles}>
                 {isGerman?"ÜBER MICH":"ABOUT ME"}
                 </NavLink>
                 <NavLink to='works' style={({isActive, isPending}: {isActive: boolean; isPending: boolean}) => isActive && !isPending ? activeStyles : pendingStyles}>
