@@ -1,4 +1,5 @@
-import { useState, ChangeEvent, FormEvent } from "react";
+import { useState, useEffect, ChangeEvent, FormEvent } from "react";
+import emailjs from "@emailjs/browser";
 import fb from "../assets/fb.png"
 import gmail from "../assets/gmail.png"
 import linkedin from "../assets/linkedin.png"
@@ -6,8 +7,7 @@ import xing from "../assets/xing.png"
 import tt from "../assets/tt.png"
 import github from "../assets/github.png"
 import { useLangContext } from "../components/Layout";
-import { db } from '../api';
-import { addDoc, collection } from "firebase/firestore"  
+
 
 
 interface FormData {
@@ -24,9 +24,12 @@ export default function Contact() {
     content: "",
   });
 
-  const userContactRef = collection(db, "contactData")
+  const [loading, setLoading] = useState(false);
+ 
 
-  function handleChange(e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) {
+  useEffect(() => emailjs.init("lBynZS3CdHPm1Mbhm"), []);
+
+ function handleChange(e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) {
     const { name, value } = e.target;
     setFormData((prev) => ({
       ...prev,
@@ -36,13 +39,29 @@ export default function Contact() {
 
   async function handleSubmit(e: FormEvent) {
     e.preventDefault();
-    addDoc(userContactRef, formData)
+   
     setFormData({
       name: "",
       email: "",
       content: "",
     })
-    alert(isGerman?"Danke für Ihre Nachricht. Ich melde mich umgehend.":"Thank for your message. I'll get back to you as soon as possible.")
+
+    const serviceId = "service_nvk45hx";
+    const templateId = "template_xdkkhvl"
+    try {
+      setLoading(true);
+      await emailjs.send(serviceId, templateId, {
+        name: formData.name,
+        email: formData.email,
+        content:formData.content
+       });
+      alert(isGerman?"Danke für Ihre Nachricht. Ich melde mich umgehend.":"Thank for your message. I'll get back to you as soon as possible.")
+    } catch (error) {
+      console.log(error, `loading states: ${loading}`);
+    } finally {
+      setLoading(false);
+    }
+   
   }
 
   return (
