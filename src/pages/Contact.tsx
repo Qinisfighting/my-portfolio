@@ -33,6 +33,7 @@ export default function Contact() {
   async function handleSubmit(e: FormEvent) {
     e.preventDefault();
     // Handle form submission
+    console.log(formData)
   }
 
   return (
@@ -45,7 +46,7 @@ export default function Contact() {
               <a href="https://github.com/Qinisfighting" target="_blank"><img src={github} alt="github"/></a>
               <a href="https://www.facebook.com/ichbinQin" target="_blank"><img src={fb} alt="facebook" /></a>
               <a href="https://twitter.com/ichbinQin" target="_blank"><img src={tt} alt="twitter" /></a>
-              <a href="mailto:yq.qualmann@gmail.com" target="_blank"><img src={gmail} alt="gmail" /></a>         
+              <a href="mailto:yanqin.qualmann@gmail.com" target="_blank"><img src={gmail} alt="gmail" /></a>         
           </div>
       </div>
       
