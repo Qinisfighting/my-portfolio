@@ -1,5 +1,5 @@
 .about-container {
-    width: 60%;
+    width: 77vw;
     margin: 80px auto 0;
     display: flex;
     flex-direction: column;
@@ -22,10 +22,10 @@
     font-style: italic;
 }
 #profile2{
-    width: 25vw;  
+    width: 22vw;  
     height: 100%;
-    margin-top: 1.8vw;
-    align-self: first baseline;
+    margin-top: 2vw;
+    align-self: flex-start;
     border-radius: 10px;
     box-shadow: 2px 2px 15px black;
  
@@ -33,7 +33,7 @@
 
 .about-text-content {
    
-    width: 40vw;
+    width: 50vw;
     align-self: flex-end;
     text-align:justify;
     justify-self: flex-start;

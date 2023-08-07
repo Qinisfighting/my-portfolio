@@ -14,9 +14,27 @@ export default function About() {
                  <h1>{isGerman? "ÜBER MICH" : "ABOUT ME"}</h1>
                  {isGerman?       
                    <div className="about-text-content">
-                     
+                       <p>Moin! Ich bin Qin, eine Webentwicklerin, die mit Begeisterung funktionale und ansprechende Apps entwickelt unter Einsatz neuester Technologien mit starkem UI/UX-Fokus.</p>
+
+<p>Ich bin in China geboren und habe an der <a className="uni" target="_blank" href="https://english.ecnu.edu.cn/About/Introduction_to_ECNU.htm">Pädagogische Universität Ostchina</a> in Shanghai meinen Bachelor
+in BWL abgeschlossen. Seit 2012 lebe ich in Deutschland. Vor meiner Zeit als Webentwicklerin war
+ich im internationalen Groß- und Einzelhandel als Produktmanagerin tätig und habe fundierte
+Erfahrungen im Vertrieb erworben, insbesondere im E-Commerce.</p>
+<p>Mein Übergang zur Web- und Softwareentwicklung begann als mir klar wurde, dass ich mehr Spaß
+daran habe, Dinge zu erschaffen, als Dinge zu verkaufen. Ich bin begeistert von den neuesten
+Möglichkeiten der E-Präsentation und den technischen Gestaltungsmöglichkeiten in der
+Programmierung und möchte gerne Teil des Entstehungsprozesses sein. Ich war schon immer auch
+ein analytischer Problemlöser und der Softwareentwicklungsprozess passt hervorragend zu meiner
+Persönlichkeit und meinem Denkstil.</p>
+<p>Darüber hinaus haben drei Jahre Pandemie meine Überzeugung gefestigt, wie wichtig eine gute
+Online-Produktpräsentation ist, um mit Hilfe von interaktiven und funktionalen Apps den Umsatz und
+die Marktanteile zu steigern. Durch die Kombination meiner umfassenden Vertriebserfahrung mit
+meinen soliden Webentwicklungskenntnissen bin ich bestens aufgestellt und freue mich darauf, mit
+stilvollen und funktionalen Apps einen echten Mehrwert zur Erreichung von Umsatz- und
+Unternehmenszielen zu schaffen.</p>
+<p>In meiner Freizeit reise ich gerne, schaue Filme und lese gerne zu den Themen Psychologie und Philosophie.</p>
                   </div>            
-                : 
+                :
                 
                   <div  className="about-text-content">
                      <p>Hey there! I'm Qin, a sales-turned web developer,  who is passionate about creating modern apps with  up-to-date techniques  and a strong UI/UX focus. </p>    
@@ -25,8 +43,9 @@ export default function About() {
                       <p>Furthermore, 3 years of pandemic has confirmed my belief  that good product presentation through interactive  apps is extremely important for customer base growth and market expansion. Combining my extensive experience in sales with my web development skills, I am well positioned to help companies and individuals to achieve their business goals.</p>
                       <p>During my spare time, I enjoy travelling, watching movies, and reading about psychology and philosophy.</p>
                   </div>         
-                }
+                } 
              </div>
+           
          </div>
          <div className="about-btns">
            <Link className="about-link" to="/works"><button className="about-btn">{isGerman? "MEINE PROJEKTE" : "MY PROJECT"}</button></Link>
