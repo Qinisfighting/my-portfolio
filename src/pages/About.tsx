@@ -20,15 +20,15 @@ export default function About() {
               </p>
 
               <p>
-                Ich bin in China geboren und habe an der
+                Ich bin in China geboren und habe an der<span> </span>
                 <a
                   className="uni"
                   target="_blank"
                   href="https://english.ecnu.edu.cn/About/Introduction_to_ECNU.htm"
                 >
-                   Pädagogische Universität Ostchina
+                  Pädagogische Universität Ostchina
                 </a>
-                in Shanghai meinen Bachelor in BWL abgeschlossen. Seit 2012 lebe
+                <span> </span>in Shanghai meinen Bachelor in BWL abgeschlossen. Seit 2012 lebe
                 ich in Deutschland. Vor meiner Zeit als Webentwicklerin war ich
                 im internationalen Groß- und Einzelhandel als Produktmanagerin
                 tätig und habe fundierte Erfahrungen im Vertrieb erworben,
@@ -69,7 +69,7 @@ export default function About() {
               </p>
               <p>
                 I was born and grew up in China and moved to Germany in 2012. I
-                graduated from
+                graduated from<span> </span>
                 <a
                   className="uni"
                   target="_blank"
@@ -77,7 +77,7 @@ export default function About() {
                 >
                    East China Normal University
                 </a>
-                in Shanghai with a BA in Business Administration. Prior to web
+                <span> </span>in Shanghai with a BA in Business Administration. Prior to web
                 development, I've been working in international trade and
                 retailing realm, where I gained profound experiences in sales,
                 notably E-Commerce.
