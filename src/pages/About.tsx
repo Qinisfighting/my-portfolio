@@ -26,7 +26,7 @@ export default function About() {
                   target="_blank"
                   href="https://english.ecnu.edu.cn/About/Introduction_to_ECNU.htm"
                 >
-                  Pädagogische Universität Ostchina
+                   Pädagogische Universität Ostchina
                 </a>
                 in Shanghai meinen Bachelor in BWL abgeschlossen. Seit 2012 lebe
                 ich in Deutschland. Vor meiner Zeit als Webentwicklerin war ich
@@ -75,7 +75,7 @@ export default function About() {
                   target="_blank"
                   href="https://english.ecnu.edu.cn/About/Introduction_to_ECNU.htm"
                 >
-                  East China Normal University
+                   East China Normal University
                 </a>
                 in Shanghai with a BA in Business Administration. Prior to web
                 development, I've been working in international trade and
