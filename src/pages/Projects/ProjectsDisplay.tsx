@@ -7,6 +7,6 @@
 export function loader( {}) {
     return null
 }
-export default function WorkDetail() {
+export default function ProjectsDisplay() {
    return <div>project detail come here</div>
 }

@@ -7,8 +7,8 @@ import './styles/contact.css'
 import './styles/footer.css'
 import './styles/header.css'
 import './styles/home.css'
-import './styles/workDetail.css'
-import './styles/works.css'
+import './styles/projectsAll.css'
+import './styles/projectsDisplay.css'
 import './styles/error.css'
 
 

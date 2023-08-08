@@ -8,7 +8,7 @@ export function loader() {
   //  return defer({ vans: getVans() })
 }
 
-export default function Works() {
+export default function ProjectsAll() {
    
    return <div>Projects come here</div>
      
