@@ -1,38 +1,17 @@
-import { initializeApp } from "firebase/app";
-import {
-    getFirestore,
- //   collection,
-  //  getDocs,
-  } from "firebase/firestore"
-  
-import { getDatabase } from 'firebase/database';
+const projectsDataURL = "https://raw.githubusercontent.com/Qinisfighting/my-portfolio/main/src/projectsData.json" 
 
-//import { getStorage } from 'firebase/storage';
-
-
-
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
-const firebaseConfig = {
-  apiKey: "AIzaSyDy7r8XY7d0TnssuonjlRR82UiEk00cNmI",
-  authDomain: "my-portfolio-da4fb.firebaseapp.com",
-  projectId: "my-portfolio-da4fb",
-  storageBucket: "my-portfolio-da4fb.appspot.com",
-  messagingSenderId: "341777647211",
-  appId: "1:341777647211:web:d734529ec3b198523ad32e"
-};
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-
-
-export default app;
-export const db = getFirestore(app);
-export const database = getDatabase(app);
-
-
-
+export default async function getProjectsData(){
+  const res = await fetch(projectsDataURL)
+  if (!res.ok) {
+      throw {
+          message: "Failed to fetch projects", 
+          statusText: res.statusText,
+          status: res.status
+      }
+  }
+  const data = await res.json()
+  //console.log(data)
+  return data 
+}
 
 
