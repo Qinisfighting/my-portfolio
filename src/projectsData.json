@@ -1,0 +1,89 @@
+
+[
+    { 
+      "id": "1",
+      "name": "Travel Planner",
+      "description_en": "",
+      "description_de": "",
+      "imageUrl": "https://github.com/Qinisfighting/my-portfolio/blob/843c54ed9d661664a956de8d8852d78e2a3d2084/src/assets/projects/travel-planner.png?raw=true",
+      "gitURL": "https://github.com/Qinisfighting/Travel-Planner",
+      "appURL" : "https://qinstravelplanner.herokuapp.com/"
+    },
+    
+    { 
+        "id": "2",
+        "name": "Markdown Note",
+        "description_en": "",
+        "description_de": "",
+        "imageUrl": "https://github.com/Qinisfighting/my-portfolio/blob/843c54ed9d661664a956de8d8852d78e2a3d2084/src/assets/projects/markdown-note.png?raw=true",
+        "gitURL": "https://github.com/Qinisfighting/Markdown-Note",
+        "appURL" : "https://qinsnotesapp.netlify.app" 
+      },
+    
+      { 
+        "id": "3",
+        "name": "Tenzies",
+        "description_en": "",
+        "description_de": "",
+        "imageUrl": "https://github.com/Qinisfighting/my-portfolio/blob/843c54ed9d661664a956de8d8852d78e2a3d2084/src/assets/projects/tenzies.png?raw=true",
+        "gitURL": "https://github.com/Qinisfighting/tenzies" ,
+        "appURL" : "https://qinstenzies.netlify.app"
+      },
+    
+      { 
+        "id": "4",
+        "name": "Quizzical",
+        "description_en": "",
+        "description_de": "",
+        "imageUrl": "https://github.com/Qinisfighting/my-portfolio/blob/843c54ed9d661664a956de8d8852d78e2a3d2084/src/assets/projects/quizzical.png?raw=true",
+        "gitURL": "https://github.com/Qinisfighting/quizzical" ,
+        "appURL" : "https://qinsquizzical.netlify.app"
+      },
+    
+      { 
+        "id": "5",
+        "name": "PicPick",
+        "description_en": "",
+        "description_de": "",
+        "imageUrl": "https://github.com/Qinisfighting/my-portfolio/blob/843c54ed9d661664a956de8d8852d78e2a3d2084/src/assets/projects/picpick.png?raw=true",
+        "gitURL": "https://github.com/Qinisfighting/picpick",
+        "appURL" : "https://qinspickpic.netlify.app" 
+      },
+
+      { 
+        "id": "6",
+        "name": "Quote Speed Typing",
+        "description_en": "",
+        "description_de": "",
+        "imageUrl": "https://github.com/Qinisfighting/my-portfolio/blob/843c54ed9d661664a956de8d8852d78e2a3d2084/src/assets/projects/typing-game.png?raw=true",
+        "gitURL": "https://github.com/Qinisfighting/typing-game-tsc",
+        "appURL" : "https://typing-game-tsc.netlify.app" 
+      },
+      { 
+      "id": "7",
+      "name": "Vanlife",
+      "description_en": "",
+      "description_de": "",
+      "imageUrl": "https://github.com/Qinisfighting/my-portfolio/blob/843c54ed9d661664a956de8d8852d78e2a3d2084/src/assets/projects/vanlife.png?raw=true",
+      "gitURL": "https://github.com/Qinisfighting/vanlife" ,
+      "appURL" : "https://qinsvanlife.netlify.app"
+    },
+    { 
+      "id": "8",
+      "name": "Personal Dashboard",
+      "description_en": "",
+      "description_de": "",
+      "imageUrl": "https://github.com/Qinisfighting/my-portfolio/blob/843c54ed9d661664a956de8d8852d78e2a3d2084/src/assets/projects/dashboard.png?raw=true",
+      "gitURL": "https://github.com/Qinisfighting/chrome-extension-dashboard" ,
+      "appURL" : "https://chrome-dashboard-tsc.netlify.app/"
+    },
+    { 
+      "id": "9",
+      "name": "My Portfolio",
+      "description_en": "",
+      "description_de": "",
+      "imageUrl": "https://github.com/Qinisfighting/my-portfolio/blob/main/src/assets/projects/portfolio.png?raw=true",
+      "gitURL": "https://github.com/Qinisfighting/my-portfolio" ,
+      "appURL" : "yanqin.netlify.app"
+    }   
+]
