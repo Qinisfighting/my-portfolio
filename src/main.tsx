@@ -7,10 +7,8 @@ import './styles/contact.css'
 import './styles/footer.css'
 import './styles/header.css'
 import './styles/home.css'
-import './styles/projectsAll.css'
-import './styles/projectsDisplay.css'
+import './styles/projects.css'
 import './styles/error.css'
-
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   //<React.StrictMode>

@@ -8,8 +8,7 @@ import Layout from "./components/Layout";
 import Error from "./components/Error";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import ProjectsDisplay from "./pages/Projects/ProjectsDisplay";
-import ProjectsAll from "./pages/Projects/ProjectsAll";
+import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 
 const router = createBrowserRouter(
@@ -18,13 +17,8 @@ const router = createBrowserRouter(
       <Route index element={<Home />} />
       <Route path="about" element={<About />} />
       <Route
-        path="display"
-        element={<ProjectsDisplay />}
-        errorElement={<Error />}
-      />
-      <Route
-        path="all"
-        element={<ProjectsAll />}
+        path="projects"
+        element={<Projects />}
         errorElement={<Error />}
       />
       <Route path="contact" element={<Contact />} />

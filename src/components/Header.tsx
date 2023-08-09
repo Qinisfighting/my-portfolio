@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 import menu from "../../src/assets/menu.png";
 import back from "../../src/assets/back.png";
 import home from "../../src/assets/home.png";
-import smile from "../../src/assets/smile.png";
+import contact from "../../src/assets/contact.png";
 import project from "../../src/assets/project.png";
 import mail from "../../src/assets/mail.png";
 
@@ -125,14 +125,14 @@ const Header: React.FC<langProps> = ({ isGerman, toggleGerman }) => {
               {isGerman ? "ÜBER MICH" : "ABOUT ME"}
               <img
                 onClick={() => setIsMenu(false)}
-                src={smile}
+                src={contact}
                 alt="smile"
                 width="18px"
               />
             </div>
           </NavLink>
           <NavLink
-            to="display"
+            to="projects"
             style={({
               isActive,
               isPending
@@ -196,7 +196,7 @@ const Header: React.FC<langProps> = ({ isGerman, toggleGerman }) => {
             {isGerman ? "ÜBER MICH" : "ABOUT ME"}
           </NavLink>
           <NavLink
-            to="display"
+            to="projects"
             style={({
               isActive,
               isPending

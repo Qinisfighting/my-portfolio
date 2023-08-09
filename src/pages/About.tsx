@@ -108,9 +108,9 @@ export default function About() {
         </div>
       </div>
       <div className="about-btns">
-        <Link className="about-link" to="/display">
+        <Link className="about-link" to="/projects">
           <button className="about-btn">
-            {isGerman ? "MEINE PROJEKTE" : "MY PROJECT"}
+            {isGerman ? "MEINE PROJEKTE" : "MY PROJECTS"}
           </button>
         </Link>
         <Link className="about-link" to="/contact">

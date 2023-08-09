@@ -1,0 +1,22 @@
+
+.project-tile{
+    display: block;
+    width: 100%;
+    border: 1px solid white;
+    padding: 20px 0;
+    
+}
+
+.project--img{
+    width: 90%;
+
+}
+.projectsAll-container{
+    width: 80%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    gap: 34px;
+    margin: auto;
+}
