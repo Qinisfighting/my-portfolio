@@ -7,7 +7,7 @@
       "description_de": "Eine App zur Planung und Vorbereitung Ihrer Reisen.",
       "imageUrl": "https://raw.githubusercontent.com/Qinisfighting/my-portfolio/main/src/assets/projects/travel-planner.png",
       "gitURL": "https://github.com/Qinisfighting/Travel-Planner",
-      "appURL" : "https://qinstravelplanner.herokuapp.com/",
+      "appURL": "https://qinstravelplanner.herokuapp.com/",
       "extra": ""
     },
   
@@ -18,7 +18,7 @@
       "description_de": "Ein kleines Tool zum Schreiben von Markdown-Notizen.",
       "imageUrl": "https://raw.githubusercontent.com/Qinisfighting/my-portfolio/main/src/assets/projects/markdown-note.png",
       "gitURL": "https://github.com/Qinisfighting/Markdown-Note",
-      "appURL" : "https://qinsnotesapp.netlify.app",
+      "appURL": "https://qinsnotesapp.netlify.app",
       "extra": "" 
 
     },
@@ -30,7 +30,7 @@
       "description_de": "Ein Würfelspiel, um Ihr Glück zu testen.",
       "imageUrl": "https://raw.githubusercontent.com/Qinisfighting/my-portfolio/main/src/assets/projects/tenzies.png",
       "gitURL": "https://github.com/Qinisfighting/tenzies" ,
-      "appURL" : "https://qinstenzies.netlify.app",
+      "appURL": "https://qinstenzies.netlify.app",
       "extra": ""
     },
   
@@ -41,7 +41,7 @@
       "description_de": "Ein Quizspiel, um Ihr Wissen zu testen.",
       "imageUrl": "https://raw.githubusercontent.com/Qinisfighting/my-portfolio/main/src/assets/projects/quizzical.png",
       "gitURL": "https://github.com/Qinisfighting/quizzical" ,
-      "appURL" : "https://qinsquizzical.netlify.app",
+      "appURL": "https://qinsquizzical.netlify.app",
       "extra": ""
     },
   
@@ -52,7 +52,7 @@
       "description_de": "Bildabzüge online bestellen - Eine Vorlage für eine Einkaufsseite.",
       "imageUrl": "https://raw.githubusercontent.com/Qinisfighting/my-portfolio/main/src/assets/projects/picpick.png",
       "gitURL": "https://github.com/Qinisfighting/picpick",
-      "appURL" : "https://qinspickpic.netlify.app",
+      "appURL": "https://qinspickpic.netlify.app",
       "extra": "" 
     },
 
@@ -63,7 +63,7 @@
       "description_de": "Verbessern Sie Ihres Tippfähigkeiten und lassen Sie sich von Zitaten inspirieren.",
       "imageUrl": "https://raw.githubusercontent.com/Qinisfighting/my-portfolio/main/src/assets/projects/typing-game.png",
       "gitURL": "https://github.com/Qinisfighting/typing-game-tsc",
-      "appURL" : "https://typing-game-tsc.netlify.app" ,
+      "appURL": "https://typing-game-tsc.netlify.app" ,
       "extra": ""
     },
     { 
@@ -73,7 +73,7 @@
       "description_de": "Vermietungsplattform für Wohnmobile - Eine vereinfachte E-Commerce-Website.",
       "imageUrl": "https://raw.githubusercontent.com/Qinisfighting/my-portfolio/main/src/assets/projects/vanlife.png",
       "gitURL": "https://github.com/Qinisfighting/vanlife" ,
-      "appURL" : "https://qinsvanlife.netlify.app",
+      "appURL": "https://qinsvanlife.netlify.app",
       "extra": ""
     },
     { 
@@ -83,17 +83,17 @@
       "description_de": "Eine Chrome-Erweiterung, die meinen eigenen Anforderungen entspricht.",
       "imageUrl": "https://raw.githubusercontent.com/Qinisfighting/my-portfolio/main/src/assets/projects/dashboard.png",
       "gitURL": "https://github.com/Qinisfighting/chrome-extension-dashboard" ,
-      "appURL" : "https://chrome-dashboard-tsc.netlify.app/",
+      "appURL": "https://chrome-dashboard-tsc.netlify.app/",
       "extra": ""
     },
     { 
       "id": "9",
-      "name": "My Portfolio",
+      "name": "Portfolio",
       "description_en": "Here it is, my own portfolio, built with fun and love 😉.",
       "description_de": "Hier ist es, mein eigenes Portfolio, erstellt mit Spaß und Hingabe 😉.",
       "imageUrl": "https://raw.githubusercontent.com/Qinisfighting/my-portfolio/main/src/assets/projects/portfolio.png",
       "gitURL": "https://github.com/Qinisfighting/my-portfolio" ,
-      "appURL" : "https://yanqin.netlify.app",
+      "appURL": "https://yanqin.netlify.app",
       "extra": ""
     }   
 ]

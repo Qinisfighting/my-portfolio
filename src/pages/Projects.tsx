@@ -38,13 +38,23 @@ useEffect(() => {
 const projectElements = projectsData.map(project => {
  const {id, name, description_en, description_de, imageUrl,gitURL, appURL} = project
  return <div key={id} className="project-tile">
+          <div className="top">
           <a target="_blank" href={appURL}><img className="project--img" src={imageUrl} alt="project-snapshot"/></a>
+          <div className="project-tile-top"> 
+            <div className="img--hover-text">APP ONLINE</div>   
+          </div>  
+          </div>   
           <div className="project-tile-content">
             <div className="project-tile-content-text">
               <h3>{name}</h3>
               <h4>{isGerman? description_de: description_en}</h4> 
-            </div>
-            <a target="_blank" href={gitURL}><img src={github} /></a>
+          </div>
+          <div className="bottom">
+          <a target="_blank" href={gitURL}><img src={github} className="git--icon"/></a>
+          <div className="project-tile-bottom">
+              <div className="icon--hover-text">SOURCE CODE</div>
+          </div>
+          </div> 
           </div>
         </div>
 }
@@ -69,10 +79,8 @@ return (
     <div className="projectsAll-container">
          <button className="go-back" onClick={()=>setIsDisplay(prev=>!prev)}>{isGerman?"ZURÜCK":"BACK"}</button>
          {projectElements }
-         <div className="btns">
-            
-            <img src={upArrow} className="go-top" onClick={goTop} />
-         </div>
+          <img src={upArrow} className="go-top" onClick={goTop} />
+      
          
     </div>
     } 
