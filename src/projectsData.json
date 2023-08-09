@@ -89,8 +89,8 @@
     { 
       "id": "9",
       "name": "My Portfolio",
-      "description_en": "Here it is, my own portfolio, built with fun and love😉.",
-      "description_de": "Hier ist es, mein eigenes Portfolio, erstellt mit Spaß und Hingabe😉.",
+      "description_en": "Here it is, my own portfolio, built with fun and love 😉.",
+      "description_de": "Hier ist es, mein eigenes Portfolio, erstellt mit Spaß und Hingabe 😉.",
       "imageUrl": "https://raw.githubusercontent.com/Qinisfighting/my-portfolio/main/src/assets/projects/portfolio.png",
       "gitURL": "https://github.com/Qinisfighting/my-portfolio" ,
       "appURL" : "https://yanqin.netlify.app",
