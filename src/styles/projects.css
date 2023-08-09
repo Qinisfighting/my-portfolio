@@ -1,17 +1,110 @@
+/*project card*/
 
-/*project 3D display
-.projectsDisplay-container{
-
-}
-
-*/
-
-
-
-
-/*project list display*/
-
-.projectsAll-container{
+.project-tile {
+    display: block;
+    width: 100%;
+    border: 1px inset rgba(255, 255, 255, 0.637);
+    padding: 20px 0;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.082);
+    position: relative;
+  }
+  
+  .project--img {
+    width: 90%;
+    box-shadow: 1px 1px 5px black;
+    border-radius: 10px;
+    backface-visibility: hidden;
+  }
+  
+  .project-tile-top {
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .img--hover-text {
+    background-color: rgba(255, 255, 255, 0.801);
+    color: rgba(0, 0, 0, 0.87);
+    border-radius: 5px;
+    padding: 3px 6px;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px black;
+    font-size: 1em;
+    text-align: left;
+  }
+  
+  .top:hover .project--img {
+    opacity: 0.3;
+  }
+  
+  .top:hover .project-tile-top {
+    opacity: 1;
+  }
+  .project-tile-content {
+    display: flex;
+    padding: 0 20px;
+    text-align: left;
+    align-items: flex-start;
+  }
+  
+  .project-tile-content-text {
+    width: 90%;
+  }
+  
+  .project-tile-content-text > h3 {
+    border-bottom: 1px inset rgba(255, 255, 255, 0.267);
+    padding-bottom: 10px;
+    margin-right: 10px;
+  }
+  .git--icon {
+    width: 30px;
+    padding-top: 20px;
+    justify-self: flex-end;
+  }
+  
+  .bottom {
+    position: relative;
+  }
+  
+  .project-tile-bottom {
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 25%;
+    right: 30%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .icon--hover-text {
+    background-color: rgba(255, 255, 255, 0.801);
+    color: rgba(0, 0, 0, 0.87);
+    border-radius: 5px;
+    padding: 3px 6px;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px black;
+    font-size: 0.8em;
+    text-align: left;
+  }
+  
+  .bottom:hover .git--icon {
+    opacity: 0.3;
+  }
+  
+  .bottom:hover .project-tile-bottom {
+    opacity: 1;
+  }
+  
+  /*project list display*/
+  
+  .projectsAll-container {
     width: 80%;
     text-align: center;
     display: grid;
@@ -20,117 +113,9 @@
     gap: 34px;
     margin: auto;
     padding: 100px 0 70px;
-}
-
-.project-tile{
-    display: block;
-    width: 100%;
-    border: 1px inset rgba(255, 255, 255, 0.637);
-    padding: 20px 0;
-    border-radius: 10px;
-    background-color:rgba(255, 255, 255, 0.082);
-    position: relative;    
-}
-
-
-
-.project--img{
-    width: 90%;
-    box-shadow: 1px 1px 5px black;
-    border-radius: 10px;
-    backface-visibility: hidden;
-
-}
-
-.project-tile-top{
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.img--hover-text{
-    background-color:  rgba(255, 255, 255, 0.801); 
-    color:rgba(0, 0, 0, 0.87);
-    border-radius: 5px;
-    padding: 3px 6px;
-    cursor: pointer;
-    box-shadow: 1px 1px 5px black;
-    font-size: 1em;
-    text-align: left;
-}
-
-.top:hover .project--img{
-    opacity: 0.3;
-}
-
-.top:hover .project-tile-top{
-    opacity: 1;
-} 
-.project-tile-content{
-    display: flex;
-    padding: 0 20px;
-    text-align: left;
-    align-items: flex-start;
-   
-    
-}
-
-.project-tile-content-text{
-    width: 90%;
-   
-}
-
-.project-tile-content-text > h3 {
-    border-bottom: 1px inset rgba(255, 255, 255, 0.267);
-    padding-bottom: 10px;
-    margin-right: 10px;
-}
-.git--icon{
-    width: 30px;
-    padding-top:20px;
-    justify-self: flex-end;
-}
-
-.bottom{
-    position: relative;
-}
-
-.project-tile-bottom{
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 25%;
-  right: 30%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.icon--hover-text{
-    background-color:  rgba(255, 255, 255, 0.801); 
-    color:rgba(0, 0, 0, 0.87);
-    border-radius: 5px;
-    padding: 3px 6px;
-    cursor: pointer;
-    box-shadow: 1px 1px 5px black;
-    font-size: .8em;
-    text-align: left;
-}
-
-.bottom:hover .git--icon{
-    opacity: 0.3;
-}
-
-.bottom:hover .project-tile-bottom{
-    opacity: 1;
-} 
-
-.go-back {
+  }
+  
+  .go-back {
     background-color: var(--decoColor);
     color: white;
     width: 150px;
@@ -140,38 +125,80 @@
     box-shadow: 1px 1px 3px black;
     cursor: pointer;
     position: absolute;
-    right:15vw;
+    right: 15vw;
     top: 200px;
-
-}
-
-.go-back:hover {
+  }
+  
+  .go-back:hover {
     background-color: #862f4f;
-    
-}
-
-.go-top{
-    width:50px;
+  }
+  
+  .go-top {
+    width: 50px;
     position: absolute;
-    right:14%;
-    bottom: 140px;
-}
-
-.go-top:hover{
+    right: 14%;
+    bottom: 100px;
+  }
+  
+  .go-top:hover {
     transform: translateY(-3px);
-   
-}
-
-
-
-@media (max-width: 1000px) {
-    .projectsAll-container{
-        grid-template-columns: 1fr 1fr;
+  }
+  
+  @media (max-width: 1000px) {
+    .projectsAll-container {
+      grid-template-columns: 1fr 1fr;
     }
-}
-
-@media (max-width: 600px) {
-    .projectsAll-container{
-        grid-template-columns: 1fr;
+  }
+  
+  @media (max-width: 600px) {
+    .projectsAll-container {
+      grid-template-columns: 1fr;
     }
-}
+  }
+  
+  /*project slide display*/
+  .projectsDisplay-container {
+    width: 60%;
+    text-align: center;
+    margin: 0 auto 100px;
+    padding: 0;
+  }
+  
+  .each-slide-effect > div {
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: auto;
+    margin: auto;
+    position: relative;
+  }
+  
+  .all {
+    background-color: var(--decoColor);
+    color: white;
+    width: 170px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 1px 3px black;
+    cursor: pointer;
+    position: absolute;
+    right: 16vw;
+    bottom: 170px;
+    letter-spacing: 0.2em;
+    font-size: 0.8em;
+  }
+  
+  .all:hover {
+    background-color: #862f4f;
+  }
+  
+  @media (max-width: 1000px) {
+    .projectsDisplay-container {
+      width: 80%;
+      text-align: center;
+      margin: 0 auto 150px;
+    }
+  }
+  
