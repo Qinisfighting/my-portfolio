@@ -1,16 +1,15 @@
 
-.project-tile{
-    display: block;
-    width: 100%;
-    border: 1px solid white;
-    padding: 20px 0;
-    
-}
-
-.project--img{
-    width: 90%;
+/*project 3D display
+.projectsDisplay-container{
 
 }
+
+*/
+
+/*project list display*/
+
+
+
 .projectsAll-container{
     width: 80%;
     text-align: center;
@@ -19,4 +18,97 @@
     justify-items: center;
     gap: 34px;
     margin: auto;
+    padding: 100px 0;
+}
+
+.project-tile{
+    display: block;
+    width: 100%;
+    border: 1px inset rgba(255, 255, 255, 0.637);
+    padding: 20px 0;
+    border-radius: 10px;
+    background-color:rgba(255, 255, 255, 0.082);
+    
+}
+
+.project--img{
+    width: 90%;
+    box-shadow: 1px 1px 5px black;
+    border-radius: 10px;
+
+}
+
+.project-tile-content{
+    display: flex;
+    padding: 0 20px;
+    text-align: left;
+    align-items: flex-start;
+   
+    
+}
+
+.project-tile-content-text{
+    width: 90%;
+   
+}
+
+.project-tile-content-text > h3 {
+    border-bottom: 1px inset rgba(255, 255, 255, 0.267);
+    padding-bottom: 10px;
+    margin-right: 10px;
+}
+.project-tile-content > a > img{
+    width: 30px;
+    padding-top:20px;
+    justify-self: flex-end;
+}
+
+
+
+.btns{
+    display: flex;
+}
+
+.go-back {
+    background-color: var(--decoColor);
+    color: white;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 1px 3px black;
+    cursor: pointer;
+    position: absolute;
+    right:15vw;
+    top: 200px;
+
+}
+
+.go-back:hover {
+    background-color: #862f4f;
+    
+}
+
+.go-top{
+    width:50px;
+    position: absolute;
+    right:14%;
+    bottom: 150px;
+}
+
+.go-top:hover{
+    transform: translateY(-3px);
+   
+}
+
+@media (max-width: 1000px) {
+    .projectsAll-container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .projectsAll-container{
+        grid-template-columns: 1fr;
+    }
 }

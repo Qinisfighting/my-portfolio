@@ -1,6 +1,7 @@
 import { useLangContext } from "../components/Layout";
 import { useState, useEffect } from 'react';
 import github from "../assets/github.png";
+import upArrow from "../assets/upArrow.png";
 
 export default function Projects(): JSX.Element {
 
@@ -11,7 +12,8 @@ export default function Projects(): JSX.Element {
      description_de:  string,
      imageUrl: string,
      gitURL:  string,
-     appURL:  string
+     appURL:  string,
+     extra: string
     }  
 
 interface ProjectsData extends Array<ProjectData>{}
@@ -26,7 +28,7 @@ useEffect(() => {
      const response = await fetch(projectsDataURL);
      const data = await response.json();
      setProjectsData(data)     
-     console.log(data)  
+    // console.log(data)  
    }
    
    fetchData();
@@ -36,15 +38,25 @@ useEffect(() => {
 const projectElements = projectsData.map(project => {
  const {id, name, description_en, description_de, imageUrl,gitURL, appURL} = project
  return <div key={id} className="project-tile">
-            <a target="_blank" href={appURL}><img className="project--img" src={imageUrl} alt="project-snapshot"/></a>
-            <h3>{name}</h3>
-            <h4>{isGerman? description_de: description_en}</h4> 
-            <a target="_blank" href={gitURL}><img src={github} width="30px" /></a>
-         
+          <a target="_blank" href={appURL}><img className="project--img" src={imageUrl} alt="project-snapshot"/></a>
+          <div className="project-tile-content">
+            <div className="project-tile-content-text">
+              <h3>{name}</h3>
+              <h4>{isGerman? description_de: description_en}</h4> 
+            </div>
+            <a target="_blank" href={gitURL}><img src={github} /></a>
+          </div>
         </div>
 }
 
 )
+
+
+function goTop(){
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
+}
+
+
 
 return (
     <>
@@ -55,8 +67,13 @@ return (
     </div>
     :
     <div className="projectsAll-container">
+         <button className="go-back" onClick={()=>setIsDisplay(prev=>!prev)}>{isGerman?"ZURÜCK":"BACK"}</button>
          {projectElements }
-         <button onClick={()=>setIsDisplay(prev=>!prev)}>{isGerman?"ZURÜCK":"BACK"}</button>
+         <div className="btns">
+            
+            <img src={upArrow} className="go-top" onClick={goTop} />
+         </div>
+         
     </div>
     } 
     </>

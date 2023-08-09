@@ -50,11 +50,12 @@
     border-radius: 5px;
     border: none;
     box-shadow: 1px 1px 3px black;
+    cursor: pointer;
   }
   
   .about-btn:hover {
     background-color: #862f4f;
-    cursor: pointer;
+    
   }
   
   .about-text {
