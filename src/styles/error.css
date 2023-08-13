@@ -1,0 +1,16 @@
+
+.error_ > h1 {
+    color:#e0cf97
+}
+
+.error-home {
+    background-color: var(--decoColor);
+    color: white;
+    width: 120px;
+    height: 25px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 1px 3px black;
+    cursor: pointer;
+    position: absolute;
+}

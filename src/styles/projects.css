@@ -192,8 +192,8 @@
   .go-slide {
     background-color: var(--decoColor);
     color: white;
-    width: 150px;
-    height: 40px;
+    width: 140px;
+    height: 35px;
     border-radius: 5px;
     border: none;
     box-shadow: 1px 1px 3px black;
@@ -201,6 +201,7 @@
     position: absolute;
     right: 15vw;
     top: 200px;
+    letter-spacing: .1em;
   }
   
   .go-slide:hover {
@@ -272,8 +273,8 @@
   .all {
     background-color: var(--decoColor);
     color: white;
-    width: 170px;
-    height: 40px;
+    width: 150px;
+    height: 35px;
     border-radius: 5px;
     border: none;
     box-shadow: 1px 1px 3px black;
@@ -281,7 +282,7 @@
     position: absolute;
     right: 16vw;
     bottom: 170px;
-    letter-spacing: 0.1em;
+    letter-spacing: .1em;
     font-size: 0.8em;
   }
   

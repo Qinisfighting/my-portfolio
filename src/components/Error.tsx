@@ -16,7 +16,7 @@ console.log(error)
         {error.status} - {error.statusText}
       </pre>
       <Link to="/">
-        <button>Return home</button>
+        <button className="error-home">HOME</button>
       </Link>
     </div>
   );
