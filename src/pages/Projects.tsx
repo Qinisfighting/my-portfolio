@@ -50,6 +50,7 @@ const skillsetDiv = (): JSX.Element => {
                <span className="tag-span">jQuery</span>
                <span className="tag-span">CSS(SCSS)</span>
                <span className="tag-span">Bootstrap</span>
+               <span className="tag-span">Figma</span>
                <span className="tag-span">Firebase</span>
                <span className="tag-span">MongoDB</span>
                <span className="tag-span">Git</span>
