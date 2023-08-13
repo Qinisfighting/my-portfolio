@@ -35,6 +35,32 @@ useEffect(() => {
    fetchData();
 }, [])
 
+
+const skillsetDiv = (): JSX.Element => {
+    return (
+        <div className={isDisplay? "skillset-container-slide": "skillset-container"}>
+           <h2>SKILLSET:</h2>
+           <p className="tags">
+               <span className="tag-span">JavaScript</span>
+               <span className="tag-span">TypeScript</span>
+               <span className="tag-span">React</span> 
+               <span className="tag-span">Node</span>
+               <span className="tag-span">Express</span>  
+               <span className="tag-span">API/REST</span> 
+               <span className="tag-span">jQuery</span>
+               <span className="tag-span">CSS(SCSS)</span>
+               <span className="tag-span">Bootstrap</span>
+               <span className="tag-span">Firebase</span>
+               <span className="tag-span">MongoDB</span>
+               <span className="tag-span">Git</span>
+           </p>
+        </div>
+    )
+}
+
+
+
+
 const projectElements = projectsData.map(project => {
     const {id, name, description_en, description_de, imageUrl,gitURL, appURL} = project
     return <div key={id} className={isDisplay? "each-slide-effect": "project-tile"}>
@@ -70,24 +96,32 @@ function goTop(){
 return (
     <>
       {isDisplay ? (
-        <div className="projectsDisplay-container">
-          <Slide indicators={true}>{projectElements}</Slide>
+        <div>
+            <div className="projectsDisplay-container">
+            {skillsetDiv()}  
+            <Slide indicators={true}>{projectElements}</Slide>
   
-          <button className="all" onClick={() => setIsDisplay((prev) => !prev)}>
-            {isGerman ? "ALLE PROJEKTE" : "All PROJECTS"}
-          </button>
+            <button className="all" onClick={() => setIsDisplay((prev) => !prev)}>
+                {isGerman ? "ALLE PROJEKTE" : "All PROJECTS"}
+            </button>
         </div>
+        </div>
+        
       ) : (
-        <div className="projectsAll-container">
-          <button
-            className="go-back"
-            onClick={() => setIsDisplay((prev) => !prev)}
-          >
-            SLIDE SHOW
-          </button>
-          {projectElements}
-          <img src={upArrow} className="go-top" onClick={goTop} />
+        <div>
+            {skillsetDiv()}  
+            <div className="projectsAll-container">
+                <button
+                className="go-slide"
+                onClick={() => setIsDisplay((prev) => !prev)}
+                >
+                SLIDE SHOW
+                </button>
+                {projectElements}
+                <img src={upArrow} className="go-top" onClick={goTop} />
+                </div>
         </div>
+        
       )}
     </>
   );
