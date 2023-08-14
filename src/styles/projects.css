@@ -286,10 +286,11 @@
     position: absolute;
     right: 14%;
     bottom: 100px;
+    cursor: pointer;
   }
   
   .go-top:hover {
-    transform: translateY(-3px);
+    transform: translateY(-5px);
   }
   
   @media (max-width: 1000px) {
