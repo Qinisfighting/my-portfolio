@@ -1,65 +1,69 @@
 /*loader*/
+
 .loader {
-  margin-left: 38vw;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: #ffefba;
-  box-shadow: 0 0 0 0 rgba(255,239,186,0.5);
-  animation: loader 1.5s infinite linear;
-  position: relative;
+   margin-left: 39vw;
+   width: 28px;
+   height: 56px;
+   display: grid;
+   background: linear-gradient(#ffefba 0 0) top/100% 2.2px,
+          radial-gradient(farthest-side at  top, #0000 calc(100% - 2.2px),#ffefba calc(100% - 1.1px) ,#0000) top,
+          linear-gradient(#ffefba 0 0) bottom/100% 2.2px,
+          radial-gradient(farthest-side at  bottom, #0000 calc(100% - 2.2px),#ffefba calc(100% - 1.1px) ,#0000) bottom;
+   background-size: 100% 1.1px,100% 50%;
+   background-repeat: no-repeat;
+   animation: hypnotic-k56gsf 4s infinite linear;
 }
 
-.loader:before,
-.loader:after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  box-shadow: 0 0 0 0 rgba(255,239,186,0.5);
-  animation: inherit;
-  animation-delay: -0.5s;
+.loader::before,
+.loader::after {
+   content: "";
+   grid-area: 1/1;
+   background: inherit;
+   border: inherit;
+   animation: inherit;
 }
 
-.loader:after {
-  animation-delay: -1s;
+.loader::after {
+   animation-duration: 2s;
 }
 
-@keyframes loader {
-  100% {
-     box-shadow: 0 0 0 44.8px #0000;
-  }
+@keyframes hypnotic-k56gsf {
+   100% {
+      transform: rotate(1turn);
+   }
 }
+
 
 .loader-slide {
   margin-left: 34vw;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: #ffefba;
-  box-shadow: 0 0 0 0 rgba(255,239,186,0.5);
-  animation: loader 1.5s infinite linear;
-  position: relative;
+  width: 28px;
+  height: 56px;
+  display: grid;
+  background: linear-gradient(#ffefba 0 0) top/100% 2.2px,
+         radial-gradient(farthest-side at  top, #0000 calc(100% - 2.2px),#ffefba calc(100% - 1.1px) ,#0000) top,
+         linear-gradient(#ffefba 0 0) bottom/100% 2.2px,
+         radial-gradient(farthest-side at  bottom, #0000 calc(100% - 2.2px),#ffefba calc(100% - 1.1px) ,#0000) bottom;
+  background-size: 100% 1.1px,100% 50%;
+  background-repeat: no-repeat;
+  animation: hypnotic-k56gsf 4s infinite linear;
 }
 
-.loader-slide:before,
-.loader-slide:after {
+.loader-slide::before,
+.loader-slide::after {
   content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  box-shadow: 0 0 0 0 rgba(255,239,186,0.5);
+  grid-area: 1/1;
+  background: inherit;
+  border: inherit;
   animation: inherit;
-  animation-delay: -0.5s;
 }
 
-.loader-slide:after {
-  animation-delay: -1s;
+.loader-slide::after {
+  animation-duration: 2s;
 }
 
-@keyframes loader {
+@keyframes hypnotic-k56gsf {
   100% {
-     box-shadow: 0 0 0 44.8px #0000;
+     transform: rotate(1turn);
   }
 }
 
