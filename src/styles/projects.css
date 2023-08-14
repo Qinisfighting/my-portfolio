@@ -1,3 +1,72 @@
+/*loader*/
+.loader {
+  margin-left: 38vw;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ffefba;
+  box-shadow: 0 0 0 0 rgba(255,239,186,0.5);
+  animation: loader 1.5s infinite linear;
+  position: relative;
+}
+
+.loader:before,
+.loader:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  box-shadow: 0 0 0 0 rgba(255,239,186,0.5);
+  animation: inherit;
+  animation-delay: -0.5s;
+}
+
+.loader:after {
+  animation-delay: -1s;
+}
+
+@keyframes loader {
+  100% {
+     box-shadow: 0 0 0 44.8px #0000;
+  }
+}
+
+.loader-slide {
+  margin-left: 34vw;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ffefba;
+  box-shadow: 0 0 0 0 rgba(255,239,186,0.5);
+  animation: loader 1.5s infinite linear;
+  position: relative;
+}
+
+.loader-slide:before,
+.loader-slide:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  box-shadow: 0 0 0 0 rgba(255,239,186,0.5);
+  animation: inherit;
+  animation-delay: -0.5s;
+}
+
+.loader-slide:after {
+  animation-delay: -1s;
+}
+
+@keyframes loader {
+  100% {
+     box-shadow: 0 0 0 44.8px #0000;
+  }
+}
+
+
+
+
+
 /*skillset div*/
 
 .skillset-container {
@@ -229,11 +298,12 @@
   
   @media (max-width: 700px) {
     .projectsAll-container {
-      grid-template-columns: 1fr;
-      
+      grid-template-columns: 1fr;    
+  }
+    .loader {
+      margin: 0 auto
     }
   }
-
   @media (max-width: 520px) {
     .projectsAll-container {
         padding-top: 280px;  
@@ -295,6 +365,10 @@
       width: 80%;
       text-align: center;
       margin: 0 auto 150px;
+    }
+
+    .loader-slide {
+      margin: auto
     }
   }
   

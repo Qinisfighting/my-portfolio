@@ -16,25 +16,31 @@ export default function Projects(): JSX.Element {
      gitURL:  string,
      appURL:  string,
      extra: string
-    }  
+    } 
 
 interface ProjectsData extends Array<ProjectData>{}
 
 const {isGerman} = useLangContext()
 const [projectsData, setProjectsData] = useState<ProjectsData>([])
 const [isDisplay, setIsDisplay] = useState<boolean>(false)
+const [isDataReady, setIsDataReady] = useState<boolean>(false) //this state is only for satisfying TS type checking
 const projectsDataURL = "https://raw.githubusercontent.com/Qinisfighting/my-portfolio/main/src/projectsData.json" 
 
 useEffect(() => {
  async function fetchData(): Promise<void> {
      const response = await fetch(projectsDataURL);
      const data = await response.json();
-     setProjectsData(data)     
+     setProjectsData(data) 
+     setIsDataReady(true)
     // console.log(data)  
    }   
    fetchData();
 }, [])
 
+
+const loader = (): JSX.Element => {
+  return <div className={isDisplay? "loader-slide": "loader"}></div>
+}
 
 const skillsetDiv = (): JSX.Element => {
     return (
@@ -59,9 +65,6 @@ const skillsetDiv = (): JSX.Element => {
     )
 }
 
-
-
-
 const projectElements = projectsData.map(project => {
     const {id, name, description_en, description_de, imageUrl,gitURL, appURL} = project
     return <div key={id} className={isDisplay? "each-slide-effect": "project-tile"}>
@@ -84,47 +87,46 @@ const projectElements = projectsData.map(project => {
              </div> 
              </div>
            </div>
-   }
-   
-
+    } 
 )
-
 
 function goTop(){
     window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
 }
 
-return (
+return ( 
     <>
-      {isDisplay ? (
-        <div>
+      { 
+        isDisplay ? (
+          <div>
             <div className="projectsDisplay-container">
-            {skillsetDiv()}  
-            <Slide indicators={true}>{projectElements}</Slide>
-  
-            <button className="all" onClick={() => setIsDisplay((prev) => !prev)}>
-                {isGerman ? "ALLE PROJEKTE" : "All PROJECTS"}
-            </button>
-        </div>
-        </div>
-        
-      ) : (
-        <div>
-            {skillsetDiv()}  
-            <div className="projectsAll-container">
-                <button
-                className="go-slide"
-                onClick={() => setIsDisplay((prev) => !prev)}
-                >
-                SLIDE SHOW
-                </button>
-                {projectElements}
-                <img src={upArrow} className="go-top" onClick={goTop} />
-                </div>
-        </div>
-        
-      )}
-    </>
-  );
+              {skillsetDiv()}
+              {isDataReady?
+                 <Slide indicators={true}>{projectElements}</Slide>
+                :
+                loader()}      
+              <button className="all" onClick={() => setIsDisplay((prev) => !prev)}>
+                  {isGerman ? "ALLE PROJEKTE" : "All PROJECTS"}
+              </button>
+            </div>
+          </div>  
+        ) : (
+          <div>
+              {skillsetDiv()}  
+              <div className="projectsAll-container">
+                  <button
+                  className="go-slide"
+                  onClick={() => setIsDisplay((prev) => !prev)}
+                  >
+                  SLIDE SHOW 
+                  </button>
+                  {isDataReady?projectElements : loader()}
+                  <img src={upArrow} className="go-top" onClick={goTop} />
+              </div>
+          </div>          
+        )
+      }
+   </>
+  ) 
 }
 
