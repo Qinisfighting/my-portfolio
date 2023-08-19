@@ -71,7 +71,7 @@ const projectElements = projectsData.map(project => {
              <div className="top">
              <a target="_blank" href={appURL}><img className="project--img" src={imageUrl} alt="project-snapshot"/></a>
              <div className="project-tile-top"> 
-               <div className="img--hover-text">APP ONLINE</div>   
+                 <a target="_blank" href={appURL}><div className="img--hover-text">APP ONLINE</div></a>   
              </div>  
              </div>   
              <div className="project-tile-content">
@@ -82,7 +82,7 @@ const projectElements = projectsData.map(project => {
              <div className="bottom">
              <a target="_blank" href={gitURL}><img src={github} className="git--icon"/></a>
              <div className="project-tile-bottom">
-                 <div className="icon--hover-text">SOURCE CODE</div>
+                 <a target="_blank" href={gitURL}><div className="icon--hover-text">SOURCE CODE</div></a>
              </div>
              </div> 
              </div>
