@@ -30,7 +30,7 @@ export default function About() {
                 </a>
                 <span> </span>in Shanghai meinen Bachelor in BWL abgeschlossen. Seit 2012 lebe
                 ich in Deutschland. Vor meiner Zeit als Webentwicklerin war ich
-                im internationalen Groß- und Einzelhandel als Produktmanagerin
+                im internationalen Groß- und Einzelhandel als Marketing-Managerin
                 tätig und habe fundierte Erfahrungen im Vertrieb erworben,
                 insbesondere im E-Commerce.
               </p>
