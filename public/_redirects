@@ -1,7 +1,7 @@
 /* /index.html 200
 
-Route::get(‘/defaultsite’, function () {
+Route::get('/defaultsite', function () {
 
-return redirect(‘/’);
+return redirect('/');
 
 });
