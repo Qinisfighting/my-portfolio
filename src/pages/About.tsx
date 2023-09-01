@@ -52,8 +52,7 @@ export default function About() {
                 umfassenden Vertriebserfahrung mit meinen soliden
                 Webentwicklungskenntnissen bin ich bestens aufgestellt und freue
                 mich darauf, mit stilvollen und funktionalen Apps einen echten
-                Mehrwert zur Erreichung von Individual- und Unternehmenszielen zu
-                schaffen.
+                Mehrwert zur Erreichung von Kundenzielen zu schaffen.
               </p>
               <p>
                 In meiner Freizeit reise ich gerne, schaue Filme und lese gerne
