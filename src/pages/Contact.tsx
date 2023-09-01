@@ -86,7 +86,7 @@ export default function Contact() {
           <a href="https://www.facebook.com/ichbinQin" target="_blank">
             <img src={fb} alt="facebook" />
           </a>
-          <a href="https://twitter.com/ichbinQin" target="_blank">
+          <a href="https://twitter.com/yanqin_q" target="_blank">
             <img src={tt} alt="twitter" />
           </a>
           <a href="mailto:yanqin.qualmann@gmail.com" target="_blank">
