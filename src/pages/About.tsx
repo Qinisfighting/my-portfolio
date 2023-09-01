@@ -52,7 +52,7 @@ export default function About() {
                 umfassenden Vertriebserfahrung mit meinen soliden
                 Webentwicklungskenntnissen bin ich bestens aufgestellt und freue
                 mich darauf, mit stilvollen und funktionalen Apps einen echten
-                Mehrwert zur Erreichung von Umsatz- und Unternehmenszielen zu
+                Mehrwert zur Erreichung von Individual- und Unternehmenszielen zu
                 schaffen.
               </p>
               <p>
