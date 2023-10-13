@@ -36,7 +36,7 @@ export default function About() {
               </p>
               <p>
                 Mein Übergang zur Web- und Softwareentwicklung begann, als mir klar wurde, 
-                dass ich auch Spaß daran habe, Dinge zu erschaffen und nicht nur Dinge zu verkaufen. 
+                dass ich auch viel Spaß daran habe, Dinge zu erschaffen und nicht nur Dinge zu verkaufen. 
                 Ich bin begeistert von den neuesten Möglichkeiten der E-Präsentation und den technischen
                 Gestaltungsmöglichkeiten in der Programmierung und möchte gerne
                 Teil des Entstehungsprozesses sein. Ich war schon immer auch ein
@@ -82,7 +82,7 @@ export default function About() {
               </p>
               <p>
                 My transition to web and software development started when I
-                realized I was interested in creating things as well, rather than only selling
+                realized I was very much interested in creating things, rather than only selling
                 them. I genuinely get excited about new ways of E-presentation
                 and technologies and am eager to be a part of the creation
                 process. I've always been an analytical problem solver as well,
