@@ -7,7 +7,7 @@
   min-height: 50vh;
   width: 100%;
   position: relative;
-  margin: 10vh 0;
+  margin: 10vh 0 0;
 }
 
 .home-container img {
@@ -43,6 +43,7 @@
   width: 77%;
   height: 350px;
   padding: 5px 7vw;
+
 }
 
 .home--text h1:nth-child(1) {
@@ -107,23 +108,21 @@
     display: none;
   }
 
-  .home--text {
-    font-size: 1.3em;
+  .home--text {  
     padding-left: 30vw;
-    padding-top: 20px;
+    padding-top: 15px;
   }
 }
 
 @media (max-width: 500px) {
   .home--text {
     padding-left: 25%;
-    padding-top: 35px;
+    padding-top: 30px;
   }
 
   .home--text h1 {
     bottom: 20vh;
-    line-height: 1.4em;
-    font-size: 1.2em;
+    line-height: 1.5em;
     padding-left: 13vw;
     padding-right: 1.5vw;
   }

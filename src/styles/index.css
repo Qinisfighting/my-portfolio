@@ -37,7 +37,7 @@ body {
   padding: 0;
   -ms-overflow-style: none;
   scrollbar-width: none;
-  min-height: 85vh;
+  min-height: 100vh;
   color: white;
 }
 

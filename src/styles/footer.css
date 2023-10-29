@@ -1,10 +1,9 @@
 footer {	
 	left: 0;
-	bottom: 0;
+	bottom: 7px;
 	height: 30px;
 	width: 100%;
 	text-align: center;
-	padding-bottom: 0;
 	font-size: .9em;
 	font-weight: 650;
 	position: absolute;	

@@ -44,10 +44,11 @@ header a {
   cursor: pointer;
   color: var(--decoColor);
   margin-right: 20px;
-  padding: 6px 5px;
+  padding: 5px;
   border-radius: 50%;
   border: 1px 1px inset black;
   font-weight: 600;
+  font-size: .8rem;
 }
 
 .lang:hover {
