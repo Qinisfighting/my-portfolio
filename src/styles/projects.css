@@ -281,18 +281,6 @@
     background-color: #862f4f;
   }
   
-  .go-top {
-    width: 50px;
-    position: absolute;
-    right: 14%;
-    bottom: 100px;
-    cursor: pointer;
-  }
-  
-  .go-top:hover {
-    transform: translateY(-3px);
-  }
-  
   @media (max-width: 1000px) {
     .projectsAll-container {
       grid-template-columns: 1fr 1fr;

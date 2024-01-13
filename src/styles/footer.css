@@ -1,11 +1,31 @@
 footer {	
 	left: 0;
-	bottom: 7px;
+	bottom: 25px;
 	height: 30px;
 	width: 100%;
 	text-align: center;
 	font-size: .9em;
-	font-weight: 650;
+	color:lightgray;
 	position: absolute;	
 }
 
+.go-top {
+	z-index: 1000;
+	width: 50px;
+	position: fixed;
+	right: 7%;
+	bottom: 30px;
+	cursor: pointer;
+	opacity: .7;
+	filter: drop-shadow(2px 2px 3px #222);
+	-webkit-filter: drop-shadow(2px 2px 3px #222);
+	-ms-filter: drop-shadow(2px 2px 3px #222);
+	-moz-filter: drop-shadow(2px 2px 3px #222);
+	-o-filter: drop-shadow(2px 2px 3px #222);
+  }
+  
+  .go-top:hover {
+	transform: translateY(-3px);
+  }
+  
+ 

@@ -1,7 +1,6 @@
 import { useLangContext } from "../components/Layout";
 import { useState, useEffect } from 'react';
 import github from "../assets/github.png";
-import upArrow from "../assets/upArrow.png";
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
 
@@ -91,9 +90,7 @@ const projectElements = projectsData.map(project => {
     } 
 )
 
-function goTop(){
-    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
-}
+
 
 return ( 
     <>
@@ -122,7 +119,7 @@ return (
                   SLIDE SHOW 
                   </button>
                   {isDataReady?projectElements : loader()}
-                  <img src={upArrow} className="go-top" onClick={goTop} />
+                 
               </div>
           </div>          
         )
