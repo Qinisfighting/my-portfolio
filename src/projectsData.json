@@ -89,11 +89,21 @@
     { 
       "id": "9",
       "name": "Portfolio",
-      "description_en": "Here it is, my own portfolio, built with fun and love 😉.",
-      "description_de": "Hier ist es, mein eigenes Portfolio, erstellt mit Spaß und Hingabe 😉.",
+      "description_en": "My own portfolio.",
+      "description_de": "Mein eigenes Portfolio.",
       "imageUrl": "https://raw.githubusercontent.com/Qinisfighting/my-portfolio/main/src/assets/projects/portfolio.png",
       "gitURL": "https://github.com/Qinisfighting/my-portfolio" ,
       "appURL": "https://yanqin.netlify.app",
       "extra": ""
-    }   
+    },
+    { 
+      "id": "10",
+      "name": "FSG Offizielle Website",
+      "description_en": "An official website for a driving school.",
+      "description_de": "Eine Offizielle Website für eine Fahrschule.",
+      "imageUrl": "https://raw.githubusercontent.com/Qinisfighting/my-portfolio/main/src/assets/projects/fahrschule.png",
+      "gitURL": "https://github.com/Qinisfighting/fahrschule-am-gymnasium" ,
+      "appURL": "https://fahrschule-am-gymnasium.info/",
+      "extra": ""
+    }     
 ]
