@@ -52,20 +52,19 @@ const skillsetDiv = (): JSX.Element => {
                <span className="tag-span">Node</span>
                <span className="tag-span">Express</span>  
                <span className="tag-span">API/REST</span> 
-               <span className="tag-span">jQuery</span>
                <span className="tag-span">CSS(SCSS)</span>
                <span className="tag-span">Tailwind</span>
                <span className="tag-span">Figma</span>
                <span className="tag-span">Firebase</span>
                <span className="tag-span">MongoDB</span>
                <span className="tag-span">Git</span>
-               <span className="tag-span">Scrum</span>
+               <span className="tag-span">Agile</span>
            </p>
         </div>
     )
 }
 
-const projectElements = projectsData.map(project => {
+const projectElements = projectsData.sort((a, b) => Number(a.id) - Number(b.id)).map(project => {
     const {id, name, description_en, description_de, imageUrl,gitURL, appURL} = project
     return <div key={id} className={isDisplay? "each-slide-effect": "project-tile"}>
              <div className="top">

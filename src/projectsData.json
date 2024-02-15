@@ -105,5 +105,15 @@
       "gitURL": "https://github.com/Qinisfighting/fahrschule-am-gymnasium" ,
       "appURL": "https://fahrschule-am-gymnasium.info/",
       "extra": ""
-    }     
+    },
+    { 
+      "id": "11",
+      "name": "ETC Offizielle Website",
+      "description_en": "An official website for a life coaching company.",
+      "description_de": "Eine Offizielle Website für ein Life-Coaching Unternehmen.",
+      "imageUrl": "https://raw.githubusercontent.com/Qinisfighting/my-portfolio/main/src/assets/projects/coaching.png",
+      "gitURL": "https://github.com/Qinisfighting/EllenTangCoaching" ,
+      "appURL": "https://ellen-tang-coaching.netlify.app/",
+      "extra": ""
+    }        
 ]
