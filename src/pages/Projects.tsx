@@ -64,7 +64,7 @@ const skillsetDiv = (): JSX.Element => {
     )
 }
 
-const projectElements = projectsData.sort((a, b) => Number(a.id) - Number(b.id)).map(project => {
+const projectElements = projectsData.sort((a, b) => Number(b.id) - Number(a.id)).map(project => {
     const {id, name, description_en, description_de, imageUrl,gitURL, appURL} = project
     return <div key={id} className={isDisplay? "each-slide-effect": "project-tile"}>
              <div className="top">
