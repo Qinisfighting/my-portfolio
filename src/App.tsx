@@ -9,6 +9,7 @@ import Error from "./components/Error";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
+import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 
 const router = createBrowserRouter(
@@ -21,6 +22,7 @@ const router = createBrowserRouter(
         element={<Projects />}
         errorElement={<Error />}
       />
+      <Route path="services" element={<Services />} />
       <Route path="contact" element={<Contact />} />
     </Route>
   )

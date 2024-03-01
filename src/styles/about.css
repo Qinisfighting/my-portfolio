@@ -44,13 +44,14 @@
   .about-btn {
     background-color: var(--decoColor);
     color: white;
-    margin: 10px;
-    width: 200px;
+    margin: 0 0 50px;
+    width: 180px;
     height: 40px;
     border-radius: 5px;
     border: none;
     box-shadow: 1px 1px 3px black;
     cursor: pointer;
+    letter-spacing: 1.5px;
   }
   
   .about-btn:hover {

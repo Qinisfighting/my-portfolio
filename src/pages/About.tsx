@@ -111,9 +111,9 @@ export default function About() {
             {isGerman ? "MEINE PROJEKTE" : "MY PROJECTS"}
           </button>
         </Link>
-        <Link className="about-link" to="/contact">
+        <Link className="about-link" to="/services">
           <button className="about-btn">
-            {isGerman ? "KONTATIEREN MICH" : "CONTACT ME"}
+            {isGerman ? "MEINE LEISTUNGEN" : "MY SERVICES"}
           </button>
         </Link>
       </div>

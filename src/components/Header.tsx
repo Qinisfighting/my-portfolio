@@ -5,6 +5,7 @@ import back from "../../src/assets/back.png";
 import home from "../../src/assets/home.png";
 import contact from "../../src/assets/contact.png";
 import project from "../../src/assets/project.png";
+import service from "../../src/assets/service.png";
 import mail from "../../src/assets/mail.png";
 
 interface ActiveStyles {
@@ -108,7 +109,7 @@ const Header: React.FC<langProps> = ({ isGerman, toggleGerman }) => {
             }) => (isActive && !isPending ? activeStylesMenu : pendingStyles)}
           >
             <div onClick={() => setIsMenu(false)}>
-              HOME <img src={home} alt="home" width="18px" />
+              HOME <img src={home} alt="home" width="19px" />
             </div>
           </NavLink>
           <NavLink
@@ -122,7 +123,7 @@ const Header: React.FC<langProps> = ({ isGerman, toggleGerman }) => {
             }) => (isActive && !isPending ? activeStylesMenu : pendingStyles)}
           >
             <div onClick={() => setIsMenu(false)}>
-              {isGerman ? "ÜBER MICH" : "ABOUT ME"}
+              {isGerman ? "ÜBER MICH " : "ABOUT ME "}
               <img
                 onClick={() => setIsMenu(false)}
                 src={contact}
@@ -142,8 +143,23 @@ const Header: React.FC<langProps> = ({ isGerman, toggleGerman }) => {
             }) => (isActive && !isPending ? activeStylesMenu : pendingStyles)}
           >
             <div onClick={() => setIsMenu(false)}>
-              {isGerman ? "PROJEKT" : "PROJECT"}
-              <img src={project} alt="project" width="18px" />
+              {isGerman ? "PROJEKTE " : "PROJECTS "}
+              <img src={project} alt="project" width="17px" />
+            </div>
+          </NavLink>
+          <NavLink
+            to="services"
+            style={({
+              isActive,
+              isPending
+            }: {
+              isActive: boolean;
+              isPending: boolean;
+            }) => (isActive && !isPending ? activeStylesMenu : pendingStyles)}
+          >
+            <div onClick={() => setIsMenu(false)}>
+              {isGerman ? "LEISTUNGEN " : "SERVICES "}
+              <img src={service} alt="service" width="18px" />
             </div>
           </NavLink>
           <NavLink
@@ -158,7 +174,7 @@ const Header: React.FC<langProps> = ({ isGerman, toggleGerman }) => {
             }) => (isActive && !isPending ? activeStylesMenu : pendingStyles)}
           >
             <div onClick={() => setIsMenu(false)}>
-              {isGerman ? "KONTAKT" : "CONTACT"}
+              {isGerman ? "KONTAKT " : "CONTACT "}
               <img src={mail} alt="mail" width="18px" />
             </div>
           </NavLink>
@@ -205,7 +221,19 @@ const Header: React.FC<langProps> = ({ isGerman, toggleGerman }) => {
               isPending: boolean;
             }) => (isActive && !isPending ? activeStyles : pendingStyles)}
           >
-            {isGerman ? "PROJEKT" : "PROJECT"}
+            {isGerman ? "PROJEKTE" : "PROJECTS"}
+          </NavLink>
+          <NavLink
+            to="services"
+            style={({
+              isActive,
+              isPending
+            }: {
+              isActive: boolean;
+              isPending: boolean;
+            }) => (isActive && !isPending ? activeStyles : pendingStyles)}
+          >
+            {isGerman ? "LEISTUNGEN" : "SERVICES"}
           </NavLink>
           <NavLink
             to="contact"

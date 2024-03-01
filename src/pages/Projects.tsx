@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import github from "../assets/github.png";
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
+import { Link } from "react-router-dom";
 
 export default function Projects(): JSX.Element {
 
@@ -124,6 +125,12 @@ return (
           </div>          
         )
       }
+
+        <Link className="about-link" to="/services">
+          <button className="about-btn">
+            {isGerman ? "MEINE LEISTUNGEN" : "MY SERVICES"}
+          </button>
+        </Link>
    </>
   ) 
 }

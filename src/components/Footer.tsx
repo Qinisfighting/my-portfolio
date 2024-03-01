@@ -21,9 +21,7 @@ export default function Footer() {
           <img src={upArrow} className="go-top" onClick={goTop} alt="toTop" />
         )}
         
-        <a href="https://www.yanqin.de" target="_blank">
-          <h4>QIN勤©2023 up&qu</h4>
-        </a>
+          <h4>2024 © QIN's code</h4>  
       </footer>
     );
   }

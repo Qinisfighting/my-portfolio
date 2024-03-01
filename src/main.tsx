@@ -8,6 +8,7 @@ import './styles/footer.css'
 import './styles/header.css'
 import './styles/home.css'
 import './styles/projects.css'
+import './styles/services.css'
 import './styles/error.css'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
