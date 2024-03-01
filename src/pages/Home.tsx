@@ -2,6 +2,7 @@ import profile from "../../src/assets/profile.png";
 import coding from "../../src/assets/coding.png";
 import design from "../../src/assets/design.jpg";
 import { useLangContext } from "../components/Layout";
+import { Link } from "react-router-dom";
 
 
 
@@ -18,12 +19,14 @@ import { useLangContext } from "../components/Layout";
                   <h1>Ich <br/>codiere,</h1>
                   <h1>designe,</h1>
                   <h1>& entwickle Apps. </h1>
+                  <button><Link to="/about">ÜBER MICH</Link></button>
               </div>
               :
               <div className="home--text"> 
                   <h1>I code,</h1>
                   <h1>design, </h1>
                   <h1> &<br />develope apps. </h1>
+                  <button><Link to="/about">ABOUT ME</Link></button>
               </div>
                 }
            

@@ -16,10 +16,10 @@
 }
 
 #profile {
-  max-width: 20%;
+  max-width: 19%;
   position: absolute;
   z-index: 1;
-  top: 7vh;
+  top: 9vh;
   left: 7vw;
 }
 
@@ -47,17 +47,20 @@
 }
 
 .home--text h1:nth-child(1) {
-  animation: fade-in 3s ease-in-out 1.5s;
+ 
+  animation: fade-in 2s ease-in-out 0.7s;
   animation-fill-mode: both;
 }
 
 .home--text h1:nth-child(2) {
-  animation: fade-in 3s ease-in-out 2.5s;
+
+  animation: fade-in 2s ease-in-out 1.7s;
   animation-fill-mode: both;
 }
 
 .home--text h1:nth-child(3) {
-  animation: fade-in 3s ease-in-out 3.5s;
+
+  animation: fade-in 2s ease-in-out 2.7s;
   animation-fill-mode: both;
 }
 
@@ -65,6 +68,24 @@
   font-size: 0.5em;
   font-weight: 400;
   color: gray;
+}
+
+.home--text > button {
+  background-color: transparent;
+  border: .5px solid white;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  padding: 5px 10px;
+  animation: fade-in 2s ease-in-out 3.7s;
+  animation-fill-mode: both;
+  margin-top: 5px;
+
+
+}
+.home--text > button:hover {
+ box-shadow: 0 0 20px 1px rgba(255, 255, 255, 0.541);
+ transition: ease-in-out .5s;
 }
 
 #home-img1 {
@@ -91,13 +112,15 @@
   }
 }
 
-@media (max-width: 800px) {
+
+
+@media (max-width: 1024px) {
   .home-container {
     margin-bottom: 50px;
   }
   #profile {
-    max-width: 250px;
-    top: 15vh;
+    max-width: 300px;
+    top: 8vh;
   }
 
   #home-img1 {
@@ -109,26 +132,85 @@
   }
 
   .home--text {  
-    padding-left: 30vw;
-    padding-top: 15px;
+    padding-left: 28vw;
+    padding-top: 10px;
+  }
+
+  .home--text h1{  
+    font-size: 2em;
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .home--text {
-    padding-left: 25%;
-    padding-top: 30px;
+    padding-left: 20%;
+    padding-top: 0;
   }
 
   .home--text h1 {
+    font-size: 1.6em;
     bottom: 20vh;
     line-height: 1.5em;
-    padding-left: 13vw;
+    padding-left: 19vw;
     padding-right: 1.5vw;
   }
 
   #profile {
-    max-width: 180px;
-    top: 23vh;
+    max-width: 200px;
+    top: 24vh;
   }
+
+  .home--text > button {
+    margin-left: 107px;
+  }
+
+}
+
+@media (max-width: 400px) {
+  .home--text {
+    padding-left: 25%;
+   
+  }
+
+  .home--text h1 {
+    padding-left: 14vw;
+    font-size: 1.5em;
+
+  }
+
+  .home--text > button {
+    margin-left: 53px;
+  }
+  #profile {
+    max-width: 180px;
+    top: 24vh;
+  }
+
+ 
+}
+
+@media (max-width: 300px) {
+  .home--text {
+    padding-left: 23%;
+    padding-top: 20px;
+  
+   
+  }
+
+  .home--text h1 {
+    font-size: 1.2em;
+
+  }
+
+  .home--text > button {
+    padding: 4px;
+    margin-left: 37px;
+  }
+
+  #profile {
+    max-width: 120px;
+    top: 20vh;
+  }
+
+ 
 }
