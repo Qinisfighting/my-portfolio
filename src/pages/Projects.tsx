@@ -120,7 +120,6 @@ return (
                   SLIDE SHOW 
                   </button>
                   {isDataReady?projectElements : loader()}
-                 
               </div>
           </div>          
         )
