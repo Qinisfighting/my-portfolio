@@ -19,14 +19,14 @@ import { Link } from "react-router-dom";
                   <h1>Ich <br/>codiere,</h1>
                   <h1>designe,</h1>
                   <h1>& entwickle Apps. </h1>
-                  <button><Link to="/about">MEHR ...</Link></button>
+                  <button><Link to="/services">MEHR ...</Link></button>
               </div>
               :
               <div className="home--text"> 
                   <h1>I code,</h1>
                   <h1>design, </h1>
                   <h1> &<br />develope apps. </h1>
-                  <button><Link to="/about">MORE ...</Link></button>
+                  <button><Link to="/services">MORE ...</Link></button>
               </div>
                 }
            
