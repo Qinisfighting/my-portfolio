@@ -144,7 +144,7 @@
 @media (max-width: 600px) {
   .home--text {
     padding-left: 20%;
-    padding-top: 0;
+    padding-top: 20px;
   }
 
   .home--text h1 {
@@ -161,7 +161,7 @@
   }
 
   .home--text > button {
-    margin-left: 107px;
+    margin-left: 117px;
   }
 
 }
@@ -192,7 +192,7 @@
 @media (max-width: 300px) {
   .home--text {
     padding-left: 23%;
-    padding-top: 20px;
+    padding-top: 25px;
   
    
   }

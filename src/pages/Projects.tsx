@@ -94,11 +94,11 @@ const projectElements = projectsData.sort((a, b) => Number(b.id) - Number(a.id))
 
 
 return ( 
-    <>
+    <div>
       { 
         isDisplay ? (
           <div>
-            <div className="projectsDisplay-container">
+            <div className="projectsDisplay-container" >
               {skillsetDiv()}
               {isDataReady?
                  <Slide indicators={true}>{projectElements}</Slide>
@@ -126,12 +126,12 @@ return (
         )
       }
 
-        <Link className="about-link" to="/services">
-          <button className="about-btn">
-            {isGerman ? "MEINE LEISTUNGEN" : "MY SERVICES"}
+        <Link className="about-link" to="/services" >
+          <button className="about-btn" style={{float:"right", marginRight:"15vw", width:140, marginBottom:150}}>
+            {isGerman ? "LEISTUNGEN" : "SERVICES"}
           </button>
         </Link>
-   </>
+   </div>
   ) 
 }
 

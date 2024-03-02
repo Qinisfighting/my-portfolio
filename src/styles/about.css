@@ -37,21 +37,23 @@
   }
   
   .about-btns {
-    margin-top: 30px;
+    margin: 10px 0 50px;
     text-align: right;
+    
   }
   
   .about-btn {
     background-color: var(--decoColor);
     color: white;
-    margin: 0 0 50px;
-    width: 180px;
+    margin: 15px;
+    min-width: 130px;
     height: 40px;
     border-radius: 5px;
     border: none;
     box-shadow: 1px 1px 3px black;
     cursor: pointer;
     letter-spacing: 1.5px;
+    padding: 4px 12px;
   }
   
   .about-btn:hover {

@@ -108,12 +108,12 @@ export default function About() {
       <div className="about-btns">
         <Link className="about-link" to="/projects">
           <button className="about-btn">
-            {isGerman ? "MEINE PROJEKTE" : "MY PROJECTS"}
+            {isGerman ? "PROJEKTE" : "PROJECTS"}
           </button>
         </Link>
         <Link className="about-link" to="/services">
           <button className="about-btn">
-            {isGerman ? "MEINE LEISTUNGEN" : "MY SERVICES"}
+            {isGerman ? "LEISTUNGEN" : "SERVICES"}
           </button>
         </Link>
       </div>

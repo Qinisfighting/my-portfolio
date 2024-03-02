@@ -258,8 +258,8 @@
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
     gap: 34px;
-    margin: auto;
-    padding: 180px 0 70px;
+    margin: 80px auto 50px;
+    padding: 180px 0 0;
   }
   
   .go-slide {
@@ -275,6 +275,7 @@
     right: 15vw;
     top: 200px;
     letter-spacing: .1em;
+  
   }
   
   .go-slide:hover {
@@ -318,7 +319,7 @@
     width: 70%;
     text-align: center;
     margin: 0 auto 100px;
-    padding: 80px 0 0;
+    padding: 100px 0 0;
   }
   
 
@@ -336,17 +337,17 @@
   .all {
     background-color: var(--decoColor);
     color: white;
-    width: 170px;
-    height: 35px;
+    width: 140px;
+    height: 40px;
     border-radius: 5px;
     border: none;
     box-shadow: 1px 1px 3px black;
     cursor: pointer;
     position: absolute;
-    right: 16vw;
-    bottom: 170px;
+    right: 15vw;
+    top: 200px;
     letter-spacing: .1em;
-    font-size: 0.8em;
+
   }
   
   .all:hover {
@@ -357,7 +358,7 @@
     .projectsDisplay-container {
       width: 80%;
       text-align: center;
-      margin: 0 auto 150px;
+      margin: 0 auto 50px;
     }
 
     .loader-slide {
@@ -368,6 +369,7 @@
   @media (max-width: 600px) {
     .projectsDisplay-container {
         padding: 0;
+        margin-top:170px
       }
     .skillset-container-slide {
         width:100%;
