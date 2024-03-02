@@ -37,15 +37,20 @@
   }
   
   .about-btns {
+    display: flex;
+    gap:15px;
     margin: 10px 0 50px;
-    text-align: right;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-wrap: wrap;
+  
     
   }
   
   .about-btn {
     background-color: var(--decoColor);
     color: white;
-    margin: 15px;
+    margin: 15px 0;
     min-width: 130px;
     height: 40px;
     border-radius: 5px;
