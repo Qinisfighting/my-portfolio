@@ -33,8 +33,7 @@
   
 .service-top h1 {
     text-align: left;
-    font-size: 2em;
-
+    font-size: 1.9em;
     padding-left: 10px;
     margin-bottom: 0;
     color: #e0cf97;
@@ -94,4 +93,13 @@
     align-items: flex-end;
     border-top: .5px dotted #e0e0e0;
 
+}
+
+
+@media (max-width: 500px) { 
+    .service-top h1 {     
+        font-size: 1.7em;  
+      }
+    
+    
 }
