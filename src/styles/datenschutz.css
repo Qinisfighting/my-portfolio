@@ -1,0 +1,50 @@
+.datenschutz{
+    margin: 50px auto;
+    width: 80%;
+    padding: 20px;
+    line-height: 1.5;
+    text-align: justify;
+    text-justify: inter-word;
+    border-bottom: .7px solid gray;
+}
+
+.datenschutz h1{
+border-bottom: .7px solid gray;
+padding-bottom: 7px;
+color:  var(--decorColor2)
+}
+.datenschutz a{
+    color: var(--decorColor2);
+    text-decoration: underline;   
+}
+
+.datenschutz h2 {
+    color:  #ffefbac7;
+    padding: 10px 0;
+}
+
+.datenschutz h3,h4 {
+    color:  white;
+    padding: 10px 0;
+
+}
+
+
+.datenschutz h3,h4,p{
+    color:   rgba(255, 255, 255, 0.85);
+}
+@media screen and (max-width: 860px) {
+    .datenschutz{
+        width: 90%;
+        
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .datenschutz{
+        width: 95%;     
+    }
+}
+
+
+

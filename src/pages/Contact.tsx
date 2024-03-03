@@ -7,11 +7,13 @@ import xing from "../assets/xing.png";
 import tt from "../assets/tt.png";
 import github from "../assets/github.png";
 import { useLangContext } from "../components/Layout";
+import { Link } from "react-router-dom";
 
 interface FormData {
   name: string;
   email: string;
   content: string;
+  isDatenschutz: boolean;
 }
 
 export default function Contact() {
@@ -19,7 +21,8 @@ export default function Contact() {
   const [formData, setFormData] = useState<FormData>({
     name: "",
     email: "",
-    content: ""
+    content: "",
+    isDatenschutz: false
   });
 
   const [loading, setLoading] = useState(false);
@@ -29,11 +32,13 @@ export default function Contact() {
   function handleChange(
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) {
-    const { name, value } = e.target;
+    const { name, value, type, checked } = e.target as HTMLInputElement;
     setFormData((prev) => ({
       ...prev,
-      [name]: value
+      [name]: type === "checkbox" ? checked : value
     }));
+
+    console.log(formData);
   }
 
   async function handleSubmit(e: FormEvent) {
@@ -42,7 +47,8 @@ export default function Contact() {
     setFormData({
       name: "",
       email: "",
-      content: ""
+      content: "",
+      isDatenschutz: false
     });
 
     const serviceId = "service_nvk45hx";
@@ -52,7 +58,8 @@ export default function Contact() {
       await emailjs.send(serviceId, templateId, {
         name: formData.name,
         email: formData.email,
-        content: formData.content
+        content: formData.content,
+        isDatenschutz: formData.isDatenschutz
       });
       alert(
         isGerman
@@ -125,9 +132,42 @@ export default function Contact() {
             onFocus={(e) => (e.target.value = "")}
             required
           />
+            {isGerman?
+            <div className="checkbox-container">
+              <input
+                type="checkbox"
+                className="checkbox"
+                checked={formData.isDatenschutz}
+                onChange={handleChange}
+                name="isDatenschutz"
+                required
+              />
+              <label htmlFor="isDatenschutz">
+                Ich habe die <Link to="/datenschutz">Datenschutzhinweise </Link>
+                 zur Kenntnis genommen und bin mit ihnen einverstanden. Erteilte
+                Einwilligungen kann ich jederzeit widerrufen.
+              </label>
+            </div>
+              :
+            <div className="checkbox-container">
+              <input
+                type="checkbox"
+                className="checkbox"
+                checked={formData.isDatenschutz}
+                onChange={handleChange}
+                name="isDatenschutz"
+                required
+              />
+              <label htmlFor="isDatenschutz">
+              I have read and agree to the <Link to="/datenschutz">Privacy Policy</Link>.
+            </label>
+          </div>
+   }
+        
           <button className="form--submit">
             {isGerman ? "SENDEN" : "SEND"}
           </button>
+      
         </form>
       </div>
     </div>

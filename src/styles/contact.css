@@ -88,7 +88,28 @@
   textarea:focus {
     outline: none;
   }
+
+  .checkbox-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 10px 4px;
+    color: rgb(84, 84, 84);
+    text-align:left;
+  }
   
+  .checkbox-container a {
+    color: var(--decoColor);
+    font-weight: 600;
+  }
+  .checkbox-container input {
+    margin: 7px 5px 0 0;
+  }
+  .checkbox-container input:checked {
+    accent-color: var(--decoColor);
+ }
+
+
   .form--submit {
     width: 100%;
     padding: 7px;

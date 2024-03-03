@@ -11,6 +11,7 @@ import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
+import Datenschutz from "./pages/Datenschutz";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -24,6 +25,7 @@ const router = createBrowserRouter(
       />
       <Route path="services" element={<Services />} />
       <Route path="contact" element={<Contact />} />
+      <Route path="datenschutz" element={<Datenschutz />} />
     </Route>
   )
 );
