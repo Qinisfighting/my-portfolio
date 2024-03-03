@@ -62,7 +62,7 @@ export default function Datenschutz() {
         <p>
           Wir hosten unsere Website bei Netlify, Anbieter ist die NETLIFY.COM -
           Netlify, Inc.512 2nd Street, Suite 200 San Francisco, CA 94107, USA. Details entnehmen Sie der
-          <a href="https://www.netlify.com/privacy/">Datenschutzerklärung von Netlify</a>.
+          <a href="https://www.netlify.com/privacy/"> Datenschutzerklärung von Netlify</a>.
         </p>
         <h3>Auftragsverarbeitung</h3>
         <p>
