@@ -159,7 +159,7 @@ export default function Contact() {
                 required
               />
               <label htmlFor="isDatenschutz">
-              I have read and agree to the <Link to="/datenschutz">Privacy Policy</Link>.
+              I have read and agree to the <Link to="/datenschutz">Privacy Policy</Link>, I can revoke this consent at any time.
             </label>
           </div>
    }
