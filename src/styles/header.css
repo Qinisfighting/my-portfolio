@@ -12,13 +12,15 @@ header {
 }
 
 .site-logo {
-  font-family: "Rock Salt", cursive;
+  font-family:  "Splash", cursive;
   margin-right: auto;
-  font-size: 1.9em;
+  font-size: 2.5em;
   animation: fade-in-first 2s ease-in-out;
   animation-fill-mode: both;
   text-shadow: 1px 1px 5px black;
   letter-spacing: 1px;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .site-logo:hover {
@@ -26,7 +28,7 @@ header {
 }
 
 .qin {
-  font-size: 0.5em;
+  font-size: 0.4em;
   font-weight: 400;
   color: rgba(163, 163, 162, 0.793);
   font-family: var(--mainFont);
@@ -94,13 +96,13 @@ nav > a:hover {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1024px) {
   nav {
     display: none;
   }
   header .site-logo {
-    font-weight: 700;
-    font-size: 1.4em;
+    
+    
     padding-left: 0;
     padding-top: 70px;
     margin-right: 0;
@@ -177,3 +179,17 @@ nav > a:hover {
     }
   }
 }
+
+@media (max-width: 500px) {
+
+  header .site-logo {  
+    font-size: 2em;
+  
+  }}
+
+  @media (max-width: 300px) {
+
+    header .site-logo {  
+      font-size: 1.7em;
+    
+    }}
