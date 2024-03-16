@@ -42,29 +42,29 @@ const loader = (): JSX.Element => {
   return <div className={isDisplay? "loader-slide": "loader"}></div>
 }
 
-const skillsetDiv = (): JSX.Element => {
-    return (
-        <div className={isDisplay? "skillset-container-slide": "skillset-container"}>
-           <h2>SKILLSET:</h2>
-           <p className="tags">
-               <span className="tag-span">JavaScript</span>
-               <span className="tag-span">TypeScript</span>
-               <span className="tag-span">React</span> 
-               <span className="tag-span">Node</span>
-               <span className="tag-span">Express</span>  
-               <span className="tag-span">API/REST</span> 
-               <span className="tag-span">CSS(SCSS)</span>
-               <span className="tag-span">Tailwind</span>
-               <span className="tag-span">Figma</span>
-               <span className="tag-span">Firebase</span>
-               <span className="tag-span">MongoDB</span>
-               <span className="tag-span">Git</span>
-               <span className="tag-span">Agile</span>
-               . . .
-           </p>
-        </div>
-    )
-}
+// const skillsetDiv = (): JSX.Element => {
+//     return (
+//         <div className={isDisplay? "skillset-container-slide": "skillset-container"}>
+//            <h2>SKILLSET:</h2>
+//            <p className="tags">
+//                <span className="tag-span">JavaScript</span>
+//                <span className="tag-span">TypeScript</span>
+//                <span className="tag-span">React</span> 
+//                <span className="tag-span">Node</span>
+//                <span className="tag-span">Express</span>  
+//                <span className="tag-span">API/REST</span> 
+//                <span className="tag-span">CSS(SCSS)</span>
+//                <span className="tag-span">Tailwind</span>
+//                <span className="tag-span">Figma</span>
+//                <span className="tag-span">Firebase</span>
+//                <span className="tag-span">MongoDB</span>
+//                <span className="tag-span">Git</span>
+//                <span className="tag-span">Agile</span>
+//                . . .
+//            </p>
+//         </div>
+//     )
+// }
 
 const projectElements = projectsData.sort((a, b) => Number(b.id) - Number(a.id)).map(project => {
     const {id, name, description_en, description_de, imageUrl,gitURL, appURL} = project
@@ -95,30 +95,30 @@ const projectElements = projectsData.sort((a, b) => Number(b.id) - Number(a.id))
 
 return ( 
     <div>
+       <h1 className="project-header">{isGerman ? "PROJEKT BEISPIELE" : "PROJECT EXAMPLES"}</h1>
       { 
         isDisplay ? (
           <div>
             <div className="projectsDisplay-container" >
-              {skillsetDiv()}
               {isDataReady?
                  <Slide indicators={true}>{projectElements}</Slide>
                 :
                 loader()}      
               <button className="all" onClick={() => setIsDisplay((prev) => !prev)}>
-                  {isGerman ? "ALLE PROJEKTE" : "All PROJECTS"}
+                  {isGerman ? "LISTE SHOW" : "LIST SHOW"}
               </button>
+        
             </div>
           </div>  
         ) : (
           <div>
-              {skillsetDiv()}  
-              <div className="projectsAll-container">
-                  <button
-                  className="go-slide"
-                  onClick={() => setIsDisplay((prev) => !prev)}
-                  >
-                  SLIDE SHOW 
-                  </button>
+              <div className="projectsAll-container"> 
+                      <button
+                      className="go-slide"
+                      onClick={() => setIsDisplay((prev) => !prev)}
+                      >
+                      SLIDE SHOW 
+                      </button>
                   {isDataReady?projectElements : loader()}
               </div>
           </div>          

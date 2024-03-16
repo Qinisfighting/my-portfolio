@@ -10,7 +10,7 @@ export default function About() {
       <div className="about-main">
         <img src={profile2} alt="profile2" id="profile2" />
         <div className="about-text">
-          <h1>{isGerman ? "ÜBER MICH" : "ABOUT ME"}</h1>
+          <h2>{isGerman ? "ÜBER MICH" : "ABOUT ME"}</h2>
           {isGerman ? (
             <div className="about-text-content">
               <p>
@@ -103,8 +103,29 @@ export default function About() {
               </p>
             </div>
           )}
+          <div className="skillset-container">
+            <h2>SKILLSET</h2>
+            <p className="tags">
+                <span className="tag-span">JavaScript</span>
+                <span className="tag-span">TypeScript</span>
+                <span className="tag-span">React</span> 
+                <span className="tag-span">Node</span>
+                <span className="tag-span">Express</span>  
+                <span className="tag-span">API/REST</span> 
+                <span className="tag-span">CSS(SCSS)</span>
+                <span className="tag-span">Tailwind</span>
+                <span className="tag-span">Figma</span>
+                <span className="tag-span">Firebase</span>
+                <span className="tag-span">MongoDB</span>
+                <span className="tag-span">Git</span>
+                <span className="tag-span">Agile</span>
+                . . .
+            </p>
         </div>
+        </div>
+       
       </div>
+   
       <div className="about-btns">
         <Link className="about-link" to="/projects">
           <button className="about-btn">

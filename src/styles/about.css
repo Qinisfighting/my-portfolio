@@ -30,9 +30,8 @@
   
   .about-text-content {
     width: 50vw;
-    align-self: flex-end;
     text-align: justify;
-    justify-self: flex-start;
+    justify-self: center;
     line-height: 1.3em;
   }
   
@@ -69,24 +68,62 @@
   .about-text {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
   }
   
-  .about-text > h1 {
+  .about-text > h2 {
     text-align: left;
-    font-size: 2em;
-    border-left: 1px ridge gray;
-    padding-left: 10px;
+    font-size: 1.6em;
     margin-bottom: 0;
     color: #e0cf97;
   }
+
+
+/*skillset div*/
+
+.skillset-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.skillset-container > h2 {
+ color: #e0cf97;
+ align-self: flex-start;
+ font-size: 1.6em;
+ 
+}
+
+.tags {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-evenly;
+  margin: auto;
+  padding: 7px 0;
+}
+
+.tag-span {
+  padding:7px; 
+  height: 30px;
+  background-color: rgba(255, 255, 255, 0.103);
+  border-radius: 50%;
+  font-size: .8em;
+  
+}
+
+
   
   @media (max-width: 800px) {
     .about-container {
-      width: 80%;
+      
       margin: 60px auto 0;
     }
     .about-main {
       flex-direction: column;
+      gap:30px
     }
   
     #profile2 {
@@ -95,11 +132,11 @@
     }
     .about-text > h1 {
       padding-top: 10px;
+      align-self: center;
     }
   
     .about-text-content {
       width: 77vw;
-      justify-self: center;
       align-self: center;
       line-height: 1.5em;
     }

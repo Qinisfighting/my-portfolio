@@ -17,7 +17,8 @@
   }
   
   .top > h1 {
-    padding: 0 20px;
+    padding:0 20px;
+    margin-bottom: 20px;
     color: #e0cf97;
     border-left: 1px solid gray;
   }
