@@ -95,7 +95,7 @@
     justify-content: flex-start;
     padding: 10px 0;
     color: rgb(84, 84, 84);
-    text-align:justify;
+    text-align:left;
   }
   
   .checkbox-container a {
