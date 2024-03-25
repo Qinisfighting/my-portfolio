@@ -18,7 +18,7 @@ export default function Services() {
                             <li>{isGerman ? "B2B Webshop" : "B2B Webshop"}</li>
                             <li>{isGerman ? "Persönliches Portfolio" : "Personal Portfolio"}</li>
                             <li>{isGerman ? "Landingpage" : "Landing Page"}</li>
-                            <li>{isGerman ? "Event- Apps (Adventskalender, Ratespiele, Geburtstags- und Jubiläums- App usw.)" : "Event apps (Advent calendar, quiz games, birthday and anniversary app, etc.)"}</li>
+                            <li>{isGerman ? "Event- Apps (Adventskalender, Ratespiele, Geburtstags und Jubiläums- App usw.)" : "Event apps (Advent calendar, quiz games, birthday and anniversary app, etc.)"}</li>
                             <li>{isGerman ? "Apps nach Individuellen Ideen und Anforderungen" : "Apps according to personal ideas and requirements"}</li>
                         </ul>
                     </div>
