@@ -104,24 +104,23 @@ export default function About() {
             </div>
           )}
           <div className="skillset-container">
-            <h2>SKILLSET</h2>
+            <h2> {isGerman ? "HAUPTSKILLS" : "MAIN SKILLS"}</h2>
             <p className="tags">
                 <span className="tag-span">JavaScript</span>
                 <span className="tag-span">TypeScript</span>
-                <span className="tag-span">SQL</span>
                 <span className="tag-span">React</span>
                 <span className="tag-span">Next</span>
+                <span className="tag-span">SQL</span>
+                <span className="tag-span">Firebase</span>
                 <span className="tag-span">Node</span>
                 <span className="tag-span">Express</span>  
                 <span className="tag-span">API/REST</span> 
                 <span className="tag-span">HTML6</span> 
                 <span className="tag-span">CSS(SCSS)</span>
                 <span className="tag-span">Tailwind</span>
-                <span className="tag-span">Figma</span>
-                <span className="tag-span">Firebase</span>
+                <span className="tag-span">Figma</span>  
                 <span className="tag-span">Git</span>
                 <span className="tag-span">Agile</span>
-                . . .
             </p>
         </div>
         </div>
