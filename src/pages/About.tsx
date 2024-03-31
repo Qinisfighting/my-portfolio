@@ -35,7 +35,7 @@ export default function About() {
                 insbesondere im E-Commerce.
               </p>
               <p>
-                Mein Übergang zur Web- und Softwareentwicklung begann, als mir klar wurde, 
+                Mein Übergang zur Softwareentwicklung begann, als mir klar wurde, 
                 dass ich auch viel Spaß daran habe, Dinge zu erschaffen und nicht nur Dinge zu verkaufen. 
                 Ich bin begeistert von den neuesten Möglichkeiten der E-Präsentation und den technischen
                 Gestaltungsmöglichkeiten in der Programmierung und möchte gerne
@@ -48,8 +48,8 @@ export default function About() {
                 gefestigt, wie wichtig eine gute Online-Produktpräsentation ist,
                 um mit Hilfe von interaktiven und funktionalen Apps den Umsatz
                 und die Marktanteile zu steigern. Durch die Kombination meiner
-                umfassenden Vertriebserfahrung mit meinen soliden
-                Webentwicklungskenntnissen bin ich bestens aufgestellt und freue
+                umfassenden Vertriebserfahrung mit meinen soliden Full Stack-
+                Entwicklungskenntnissen bin ich bestens aufgestellt und freue
                 mich darauf, mit stilvollen und funktionalen Apps einen echten
                 Mehrwert zur Erreichung von Kundenzielen zu schaffen.
               </p>
@@ -75,13 +75,13 @@ export default function About() {
                 >
                    East China Normal University
                 </a>
-                <span> </span>in Shanghai with a BA in Business Administration. Prior to web
-                development, I've been working in international trade and
+                <span> </span>in Shanghai with a BA in Business Administration. Prior to web development,
+                I've been working in international trade and
                 retailing realm, where I gained profound experiences in sales,
                 notably E-Commerce.
               </p>
               <p>
-                My transition to web and software development started when I
+                My transition to software development started when I
                 realized I was very much interested in creating things, rather than only selling
                 them. I genuinely get excited about new ways of E-presentation
                 and technologies and am eager to be a part of the creation
@@ -93,9 +93,9 @@ export default function About() {
                 Furthermore, 3 years of pandemic has confirmed my belief that
                 good product presentation through interactive apps is extremely
                 important for customer base growth and market expansion.
-                Combining my extensive experience in sales with my web
+                Combining my extensive experience in sales with my solid full-stack
                 development skills, I am well positioned to help companies and
-                individuals to achieve their business goals.
+                individuals to achieve their goals.
               </p>
               <p>
                 During my spare time, I enjoy travelling, watching movies, and
