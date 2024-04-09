@@ -1,7 +1,7 @@
 
 [
     { 
-      "id": "1",
+      "id": "0",
       "name": "Travel Planner",
       "description_en": "An app to plan and prepare your trips.",
       "description_de": "Eine App zur Planung und Vorbereitung Ihrer Reisen.",
@@ -12,13 +12,25 @@
     },
   
     { 
-      "id": "2",
+      "id": "1",
       "name": "Markdown Note",
       "description_en": "A small tool to write markdown notes.",
       "description_de": "Ein kleines Tool zum Schreiben von Markdown-Notizen.",
       "imageUrl": "https://raw.githubusercontent.com/Qinisfighting/my-portfolio/main/src/assets/projects/markdown-note.png",
       "gitURL": "https://github.com/Qinisfighting/Markdown-Note",
       "appURL": "https://qinsnotesapp.netlify.app",
+      "extra": "" 
+
+    },
+
+    { 
+      "id": "2",
+      "name": "Rich Text to HTML Converter",
+      "description_en": "Convert your rich text to HTML.",
+      "description_de": "Konvertieren Sie Ihren Rich-Text in HTML.",
+      "imageUrl": "https://raw.githubusercontent.com/Qinisfighting/my-portfolio/main/src/assets/projects/converter.png",
+      "gitURL": "https://github.com/Qinisfighting/rich-text-to-html-converter",
+      "appURL": "https://rich-text-to-html.netlify.app/",
       "extra": "" 
 
     },
