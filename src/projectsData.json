@@ -25,7 +25,7 @@
 
     { 
       "id": "2",
-      "name": "Rich Text to HTML Converter",
+      "name": "Markup Converter",
       "description_en": "Convert your rich text to HTML.",
       "description_de": "Konvertiere deinen Rich-Text in HTML.",
       "imageUrl": "https://raw.githubusercontent.com/Qinisfighting/my-portfolio/main/src/assets/projects/converter.png",
