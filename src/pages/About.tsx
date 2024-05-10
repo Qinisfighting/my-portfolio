@@ -14,7 +14,7 @@ export default function About() {
           {isGerman ? (
             <div className="about-text-content">
               <p>
-                Moin! Ich bin Qin, eine Webentwicklerin, die mit Begeisterung
+                Moin! Ich bin Qin, eine Softwareentwicklerin, die mit Begeisterung
                 funktionale und ansprechende Apps entwickelt unter Einsatz
                 neuester Technologien mit starkem UI/UX-Fokus.
               </p>
@@ -29,7 +29,7 @@ export default function About() {
                   Pädagogische Universität Ostchina
                 </a>
                 <span> </span>in Shanghai meinen Bachelor in BWL abgeschlossen. Seit 2012 lebe
-                ich in Deutschland. Vor meiner Zeit als Webentwicklerin war ich
+                ich in Deutschland. Vor meiner Zeit als Entwicklerin war ich
                 im internationalen Groß- und Einzelhandel als Marketing-Managerin
                 tätig und habe fundierte Erfahrungen im Vertrieb erworben,
                 insbesondere im E-Commerce.
@@ -45,7 +45,7 @@ export default function About() {
               </p>
               <p>
                 Darüber hinaus haben drei Jahre Pandemie meine Überzeugung
-                gefestigt, wie wichtig eine gute Online-Produktpräsentation ist,
+                gefestigt, wie wichtig eine gute E-Produktpräsentation ist,
                 um mit Hilfe von interaktiven und funktionalen Apps den Umsatz
                 und die Marktanteile zu steigern. Durch die Kombination meiner
                 umfassenden Vertriebserfahrung mit meinen soliden Full Stack-
@@ -61,7 +61,7 @@ export default function About() {
           ) : (
             <div className="about-text-content">
               <p>
-                Hey there! I'm Qin, a sales-turned web developer, who is
+                Hey there! I'm Qin, a software developer, who is
                 passionate about creating modern apps with up-to-date techniques
                 and a strong UI/UX focus.
               </p>
@@ -75,7 +75,7 @@ export default function About() {
                 >
                    East China Normal University
                 </a>
-                <span> </span>in Shanghai with a BA in Business Administration. Prior to web development,
+                <span> </span>in Shanghai with a BA in Business Administration. Prior to software development,
                 I've been working in international trade and
                 retailing realm, where I gained profound experiences in sales,
                 notably E-Commerce.
