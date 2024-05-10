@@ -120,6 +120,7 @@ export default function About() {
                 <span className="tag-span">Tailwind</span>
                 <span className="tag-span">Figma</span>  
                 <span className="tag-span">Git</span>
+                <span className="tag-span">Azure</span>
             </p>
         </div>
         </div>
