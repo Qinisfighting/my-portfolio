@@ -14,12 +14,11 @@ export default function Services() {
                     <div className="service-text-1">
                         <h1>{isGerman ? "Was biete ich an ?" : "What do I offer ?"}</h1>
                         <ul>
-                            <li>{isGerman ? "Offizielle Website des Unternehmens" : "Company Official Website"}</li>
-                            <li>{isGerman ? "B2B Webshop" : "B2B Webshop"}</li>
-                            <li>{isGerman ? "Persönliches Portfolio" : "Personal Portfolio"}</li>
-                            <li>{isGerman ? "Landingpage" : "Landing Page"}</li>
-                            <li>{isGerman ? "Event- Apps (Adventskalender, Ratespiele, Geburtstags und Jubiläums- App usw.)" : "Event apps (Advent calendar, quiz games, birthday and anniversary app, etc.)"}</li>
-                            <li>{isGerman ? "Apps nach Individuellen Ideen und Anforderungen" : "Apps according to personal ideas and requirements"}</li>
+                            <li>{isGerman ? "App/Website des Unternehmens" : "Company website/app"}</li>
+                            <li>{isGerman ? "B2B Shop" : "B2B shop"}</li>
+                            <li>{isGerman ? "Persönliches Portfolio" : "Personal portfolio"}</li>
+                            <li>{isGerman ? "Event- App (Adventskalender, Ratespiele, Geburtstags und Jubiläums- App usw.)" : "Event app (Advent calendar, quiz games, birthday and anniversary app, etc.)"}</li>
+                            <li>{isGerman ? "App nach Individuellen Ideen und Anforderungen" : "App according to personal ideas and requirements"}</li>
                         </ul>
                     </div>
                     <img></img>

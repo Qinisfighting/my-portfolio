@@ -111,6 +111,7 @@ export default function About() {
                 <span className="tag-span">React</span>
                 <span className="tag-span">Next</span>
                 <span className="tag-span">SQL</span>
+                <span className="tag-span">C#</span>
                 <span className="tag-span">Firebase</span>
                 <span className="tag-span">Node</span>
                 <span className="tag-span">Express</span>  
