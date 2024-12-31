@@ -53,9 +53,9 @@ export default function About() {
                 ist, um mit interaktiven und funktionalen Apps Umsatz und
                 Marktanteile zu steigern. Mit meiner umfassenden
                 Vertriebserfahrung und meinen fundierten Kenntnissen in der Web-
-                und Desktop-Full-Stack-Entwicklung bin ich bestens darauf
-                vorbereitet, durch stilvolle und funktionale Apps echten
-                Mehrwert zu schaffen und die Ziele meiner Kunden zu erreichen.
+                und Desktop-Entwicklung bin ich bestens darauf vorbereitet,
+                durch stilvolle und funktionale Apps echten Mehrwert zu schaffen
+                und die Ziele meiner Kunden zu erreichen.
               </p>
               <p>
                 In meiner Freizeit reise ich gerne, schaue Filme und lese gerne
@@ -98,9 +98,9 @@ export default function About() {
                 belief in the critical importance of effective product
                 presentation through interactive and functional apps for driving
                 customer growth and market expansion. By combining my extensive
-                sales experience with my strong web and desktop full-stack
-                development skills, I am well-equipped to help businesses and
-                individuals achieve their goals.
+                sales experience with my strong web and desktop development
+                skills, I am well-equipped to help businesses and individuals
+                achieve their goals.
               </p>
               <p>
                 In my spare time, I enjoy traveling, watching movies, and
@@ -117,6 +117,7 @@ export default function About() {
               <span className="tag-span">Next</span>
               <span className="tag-span">SQL</span>
               <span className="tag-span">C#</span>
+              <span className="tag-span">.NET</span>
               <span className="tag-span">Firebase</span>
               <span className="tag-span">Node</span>
               <span className="tag-span">Express</span>
