@@ -40,7 +40,7 @@ const Header: React.FC<langProps> = ({ isGerman, toggleGerman }) => {
   const activeStyles: ActiveStyles = {
     border: "1px dotted #A49E9E",
     borderRadius: 50,
-    boxShadow: "1px 1px 2px gray"
+    boxShadow: "1px 1px 2px gray",
   };
 
   const activeStylesMenu: ActiveStylesMenu = {
@@ -48,13 +48,13 @@ const Header: React.FC<langProps> = ({ isGerman, toggleGerman }) => {
     borderBottom: "2px dotted white",
     width: "100%",
     backgroundColor: "rgba(223, 201, 161, 0.973)",
-    borderRadius: "5px"
+    borderRadius: "5px",
   };
 
   const pendingStyles: PendingStyles = {
     borderTop: "",
     borderBottom: "",
-    width: ""
+    width: "",
   };
 
   useEffect(() => {
@@ -79,7 +79,7 @@ const Header: React.FC<langProps> = ({ isGerman, toggleGerman }) => {
   return (
     <header>
       <Link to="/" className="site-logo">
-        {isGerman ? "Moin! Ich bin Qin" : "Hey! I am Qin"}
+        {isGerman ? "Moin! Ich bin Qin" : "Hi! I am Qin"}
         <span className="qin"> /'tʃɪn/. </span>
       </Link>
 
@@ -102,7 +102,7 @@ const Header: React.FC<langProps> = ({ isGerman, toggleGerman }) => {
             to="/"
             style={({
               isActive,
-              isPending
+              isPending,
             }: {
               isActive: boolean;
               isPending: boolean;
@@ -116,7 +116,7 @@ const Header: React.FC<langProps> = ({ isGerman, toggleGerman }) => {
             to="about"
             style={({
               isActive,
-              isPending
+              isPending,
             }: {
               isActive: boolean;
               isPending: boolean;
@@ -136,7 +136,7 @@ const Header: React.FC<langProps> = ({ isGerman, toggleGerman }) => {
             to="projects"
             style={({
               isActive,
-              isPending
+              isPending,
             }: {
               isActive: boolean;
               isPending: boolean;
@@ -151,7 +151,7 @@ const Header: React.FC<langProps> = ({ isGerman, toggleGerman }) => {
             to="services"
             style={({
               isActive,
-              isPending
+              isPending,
             }: {
               isActive: boolean;
               isPending: boolean;
@@ -167,7 +167,7 @@ const Header: React.FC<langProps> = ({ isGerman, toggleGerman }) => {
             className="login-link"
             style={({
               isActive,
-              isPending
+              isPending,
             }: {
               isActive: boolean;
               isPending: boolean;
@@ -191,7 +191,7 @@ const Header: React.FC<langProps> = ({ isGerman, toggleGerman }) => {
             to="/"
             style={({
               isActive,
-              isPending
+              isPending,
             }: {
               isActive: boolean;
               isPending: boolean;
@@ -203,7 +203,7 @@ const Header: React.FC<langProps> = ({ isGerman, toggleGerman }) => {
             to="about"
             style={({
               isActive,
-              isPending
+              isPending,
             }: {
               isActive: boolean;
               isPending: boolean;
@@ -215,7 +215,7 @@ const Header: React.FC<langProps> = ({ isGerman, toggleGerman }) => {
             to="projects"
             style={({
               isActive,
-              isPending
+              isPending,
             }: {
               isActive: boolean;
               isPending: boolean;
@@ -227,7 +227,7 @@ const Header: React.FC<langProps> = ({ isGerman, toggleGerman }) => {
             to="services"
             style={({
               isActive,
-              isPending
+              isPending,
             }: {
               isActive: boolean;
               isPending: boolean;
@@ -240,7 +240,7 @@ const Header: React.FC<langProps> = ({ isGerman, toggleGerman }) => {
             className="login-link"
             style={({
               isActive,
-              isPending
+              isPending,
             }: {
               isActive: boolean;
               isPending: boolean;
