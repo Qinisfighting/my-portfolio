@@ -14,13 +14,14 @@ export default function About() {
           {isGerman ? (
             <div className="about-text-content">
               <p>
-                Moin! Ich bin Qin, eine Softwareentwicklerin, die mit
-                Begeisterung funktionale und ansprechende Apps entwickelt unter
-                Einsatz neuester Technologien mit starkem UI/UX-Fokus.
+                Moin! Ich bin Qin, eine leidenschaftliche Softwareentwicklerin,
+                die funktionale und ansprechende Apps mit den neuesten
+                Technologien und einem starken Fokus auf UI/UX gestaltet.
               </p>
 
               <p>
-                Ich bin in China geboren und habe an der<span> </span>
+                Ich wurde in China geboren und habe meinen Bachelor in
+                Betriebswirtschaftslehre an der<span> </span>
                 <a
                   className="uni"
                   target="_blank"
@@ -29,31 +30,32 @@ export default function About() {
                   Pädagogische Universität Ostchina
                 </a>
                 <span> </span>in Shanghai meinen Bachelor in BWL abgeschlossen.
-                Seit 2012 lebe ich in Deutschland. Vor meiner Zeit als
-                Entwicklerin war ich im internationalen Groß- und Einzelhandel
-                als Marketing-Managerin tätig und habe fundierte Erfahrungen im
-                Vertrieb erworben, insbesondere im E-Commerce.
+                Seit 2012 lebe ich in Deutschland. Bevor ich in die
+                Softwareentwicklung wechselte, war ich als Marketing-Managerin
+                im internationalen Groß- und Einzelhandel tätig und habe dabei
+                umfangreiche Erfahrungen im Vertrieb gesammelt, insbesondere im
+                E-Commerce.
               </p>
               <p>
-                Mein Übergang zur Softwareentwicklung begann, als mir klar
-                wurde, dass ich auch viel Spaß daran habe, Dinge zu erschaffen
-                und nicht nur Dinge zu verkaufen. Ich bin begeistert von den
-                neuesten Möglichkeiten der E-Präsentation und den technischen
-                Gestaltungsmöglichkeiten in der Programmierung und möchte gerne
-                Teil des Entstehungsprozesses sein. Ich war schon immer auch ein
-                analytischer Problemlöser und der Softwareentwicklungsprozess
-                passt hervorragend zu meiner Persönlichkeit und meinem Denkstil.
+                Mein Weg zur Softwareentwicklung begann, als mir klar wurde,
+                dass ich nicht nur Freude am Verkauf von Produkten habe, sondern
+                vor allem daran, Dinge selbst zu erschaffen. Die Möglichkeiten
+                moderner E-Präsentationen und technischer Innovationen
+                begeistern mich, und ich bin voller Tatendrang, Teil des
+                kreativen Entwicklungsprozesses zu sein. Als analytische
+                Problemlöserin war für mich schnell klar, dass die
+                Softwareentwicklung perfekt zu meiner Persönlichkeit und
+                Denkweise passt.
               </p>
               <p>
                 Darüber hinaus haben drei Jahre Pandemie meine Überzeugung
-                gefestigt, wie wichtig eine gute E-Produktpräsentation ist, um
-                mit interaktiven und funktionalen Apps den Umsatz und die
-                Marktanteile zu steigern. Durch die Kombination meiner
-                umfassenden Vertriebserfahrung mit meinen soliden Kenntnissen in
-                der Web- und Desktop-Full-Stack-Entwicklung bin ich bestens
-                aufgestellt und freue mich darauf, mit stilvollen und
-                funktionalen Apps einen echten Mehrwert zur Erreichung der
-                Kundenziele zu schaffen.
+                gestärkt, wie essenziell eine effektive E-Produktpräsentation
+                ist, um mit interaktiven und funktionalen Apps Umsatz und
+                Marktanteile zu steigern. Mit meiner umfassenden
+                Vertriebserfahrung und meinen fundierten Kenntnissen in der Web-
+                und Desktop-Full-Stack-Entwicklung bin ich bestens darauf
+                vorbereitet, durch stilvolle und funktionale Apps echten
+                Mehrwert zu schaffen und die Ziele meiner Kunden zu erreichen.
               </p>
               <p>
                 In meiner Freizeit reise ich gerne, schaue Filme und lese gerne
