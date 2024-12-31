@@ -14,9 +14,9 @@ export default function About() {
           {isGerman ? (
             <div className="about-text-content">
               <p>
-                Moin! Ich bin Qin, eine Softwareentwicklerin, die mit Begeisterung
-                funktionale und ansprechende Apps entwickelt unter Einsatz
-                neuester Technologien mit starkem UI/UX-Fokus.
+                Moin! Ich bin Qin, eine Softwareentwicklerin, die mit
+                Begeisterung funktionale und ansprechende Apps entwickelt unter
+                Einsatz neuester Technologien mit starkem UI/UX-Fokus.
               </p>
 
               <p>
@@ -28,16 +28,17 @@ export default function About() {
                 >
                   Pädagogische Universität Ostchina
                 </a>
-                <span> </span>in Shanghai meinen Bachelor in BWL abgeschlossen. Seit 2012 lebe
-                ich in Deutschland. Vor meiner Zeit als Entwicklerin war ich
-                im internationalen Groß- und Einzelhandel als Marketing-Managerin
-                tätig und habe fundierte Erfahrungen im Vertrieb erworben,
-                insbesondere im E-Commerce.
+                <span> </span>in Shanghai meinen Bachelor in BWL abgeschlossen.
+                Seit 2012 lebe ich in Deutschland. Vor meiner Zeit als
+                Entwicklerin war ich im internationalen Groß- und Einzelhandel
+                als Marketing-Managerin tätig und habe fundierte Erfahrungen im
+                Vertrieb erworben, insbesondere im E-Commerce.
               </p>
               <p>
-                Mein Übergang zur Softwareentwicklung begann, als mir klar wurde, 
-                dass ich auch viel Spaß daran habe, Dinge zu erschaffen und nicht nur Dinge zu verkaufen. 
-                Ich bin begeistert von den neuesten Möglichkeiten der E-Präsentation und den technischen
+                Mein Übergang zur Softwareentwicklung begann, als mir klar
+                wurde, dass ich auch viel Spaß daran habe, Dinge zu erschaffen
+                und nicht nur Dinge zu verkaufen. Ich bin begeistert von den
+                neuesten Möglichkeiten der E-Präsentation und den technischen
                 Gestaltungsmöglichkeiten in der Programmierung und möchte gerne
                 Teil des Entstehungsprozesses sein. Ich war schon immer auch ein
                 analytischer Problemlöser und der Softwareentwicklungsprozess
@@ -45,13 +46,14 @@ export default function About() {
               </p>
               <p>
                 Darüber hinaus haben drei Jahre Pandemie meine Überzeugung
-                gefestigt, wie wichtig eine gute E-Produktpräsentation ist,
-                um mit Hilfe von interaktiven und funktionalen Apps den Umsatz
-                und die Marktanteile zu steigern. Durch die Kombination meiner
-                umfassenden Vertriebserfahrung mit meinen soliden Full Stack-
-                Entwicklungskenntnissen bin ich bestens aufgestellt und freue
-                mich darauf, mit stilvollen und funktionalen Apps einen echten
-                Mehrwert zur Erreichung von Kundenzielen zu schaffen.
+                gefestigt, wie wichtig eine gute E-Produktpräsentation ist, um
+                mit interaktiven und funktionalen Apps den Umsatz und die
+                Marktanteile zu steigern. Durch die Kombination meiner
+                umfassenden Vertriebserfahrung mit meinen soliden Kenntnissen in
+                der Web- und Desktop-Full-Stack-Entwicklung bin ich bestens
+                aufgestellt und freue mich darauf, mit stilvollen und
+                funktionalen Apps einen echten Mehrwert zur Erreichung der
+                Kundenziele zu schaffen.
               </p>
               <p>
                 In meiner Freizeit reise ich gerne, schaue Filme und lese gerne
@@ -61,73 +63,73 @@ export default function About() {
           ) : (
             <div className="about-text-content">
               <p>
-                Hey there! I'm Qin, a software developer, who is
-                passionate about creating modern apps with up-to-date techniques
-                and a strong UI/UX focus.
+                Hi there! I'm Qin, a software developer passionate about
+                building modern applications using cutting-edge techniques, with
+                a strong emphasis on UI/UX.
               </p>
               <p>
-                I was born and grew up in China and moved to Germany in 2012. I
-                graduated from<span> </span>
+                I was born and raised in China and moved to Germany in 2012. I
+                hold a BA in Business Administration from<span> </span>
                 <a
                   className="uni"
                   target="_blank"
                   href="https://english.ecnu.edu.cn/About/Introduction_to_ECNU.htm"
                 >
-                   East China Normal University
+                  East China Normal University
                 </a>
-                <span> </span>in Shanghai with a BA in Business Administration. Prior to software development,
-                I've been working in international trade and
-                retailing realm, where I gained profound experiences in sales,
-                notably E-Commerce.
+                <span> </span>in Shanghai. Before transitioning to software
+                development, I worked in the fields of international trade and
+                retail, where I gained extensive experience in sales,
+                particularly in e-commerce.
               </p>
               <p>
-                My transition to software development started when I
-                realized I was very much interested in creating things, rather than only selling
-                them. I genuinely get excited about new ways of E-presentation
-                and technologies and am eager to be a part of the creation
-                process. I've always been an analytical problem solver as well,
-                and the software developing process is a great fit for my
-                personality and thinking style.
+                My transition to software development began when I discovered my
+                passion for creating rather than just selling. I find genuine
+                excitement in exploring new approaches to e-presentation and
+                emerging technologies, and I am eager to contribute to the
+                creative process. As an analytical problem-solver, I’ve realized
+                that the software development process aligns perfectly with my
+                personality and thought process.
               </p>
               <p>
-                Furthermore, 3 years of pandemic has confirmed my belief that
-                good product presentation through interactive apps is extremely
-                important for customer base growth and market expansion.
-                Combining my extensive experience in sales with my solid full-stack
-                development skills, I am well positioned to help companies and
-                individuals to achieve their goals.
+                Furthermore, three years of the pandemic have reinforced my
+                belief in the critical importance of effective product
+                presentation through interactive and functional apps for driving
+                customer growth and market expansion. By combining my extensive
+                sales experience with my strong web and desktop full-stack
+                development skills, I am well-equipped to help businesses and
+                individuals achieve their goals.
               </p>
               <p>
-                During my spare time, I enjoy travelling, watching movies, and
-                reading about psychology and philosophy.
+                In my spare time, I enjoy traveling, watching movies, and
+                exploring topics in psychology and philosophy.
               </p>
             </div>
           )}
           <div className="skillset-container">
             <h2> {isGerman ? "HAUPTSKILLS" : "MAIN SKILLS"}</h2>
             <p className="tags">
-                <span className="tag-span">JavaScript</span>
-                <span className="tag-span">TypeScript</span>
-                <span className="tag-span">React</span>
-                <span className="tag-span">Next</span>
-                <span className="tag-span">SQL</span>
-                <span className="tag-span">C#</span>
-                <span className="tag-span">Firebase</span>
-                <span className="tag-span">Node</span>
-                <span className="tag-span">Express</span>  
-                <span className="tag-span">API/REST</span> 
-                <span className="tag-span">HTML6</span> 
-                <span className="tag-span">CSS(SCSS)</span>
-                <span className="tag-span">Tailwind</span>
-                <span className="tag-span">Figma</span>  
-                <span className="tag-span">Git</span>
-                <span className="tag-span">Azure</span>
+              <span className="tag-span">JavaScript</span>
+              <span className="tag-span">TypeScript</span>
+              <span className="tag-span">React</span>
+              <span className="tag-span">Next</span>
+              <span className="tag-span">SQL</span>
+              <span className="tag-span">C#</span>
+              <span className="tag-span">Firebase</span>
+              <span className="tag-span">Node</span>
+              <span className="tag-span">Express</span>
+              <span className="tag-span">API/REST</span>
+              <span className="tag-span">HTML6</span>
+              <span className="tag-span">CSS(SCSS)</span>
+              <span className="tag-span">Tailwind</span>
+              <span className="tag-span">Figma</span>
+              <span className="tag-span">Git</span>
+              <span className="tag-span">Azure</span>
             </p>
+          </div>
         </div>
-        </div>
-       
       </div>
-   
+
       <div className="about-btns">
         <Link className="about-link" to="/projects">
           <button className="about-btn">
