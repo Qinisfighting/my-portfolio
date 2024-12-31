@@ -44,17 +44,6 @@
   },
 
   {
-    "id": "5",
-    "name": "PicPick",
-    "description_en": "Order picture prints online - A shopping site template.",
-    "description_de": "Bildabzüge online bestellen - Eine Vorlage für eine Einkaufsseite.",
-    "imageUrl": "https://raw.githubusercontent.com/Qinisfighting/my-portfolio/main/src/assets/projects/picpick.png",
-    "gitURL": "https://github.com/Qinisfighting/picpick",
-    "appURL": "https://qinspickpic.netlify.app",
-    "extra": ""
-  },
-
-  {
     "id": "6",
     "name": "Quote Typing Game",
     "description_en": "Improve your typing skills and get inspired with quotes.",
