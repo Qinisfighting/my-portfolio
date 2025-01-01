@@ -27,7 +27,7 @@ export default function Footer() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          QIN's code
+          QIN's c♡de
         </a>
       </h5>
     </footer>
