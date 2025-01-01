@@ -22,7 +22,7 @@ export default function Services() {
               <li>
                 {isGerman
                   ? "Event- App (Adventskalender, Ratespiele, Geburtstags und Jubiläums- App usw.)"
-                  : "Event app (Advent calendar, quiz games, birthday and anniversary app, etc.)"}
+                  : "Event app (Advent calendar, quiz game, birthday and anniversary app, etc.)"}
               </li>
               <li>
                 {isGerman
