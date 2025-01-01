@@ -74,7 +74,7 @@ export default function Projects(): JSX.Element {
   }, []);
 
   const loader = (): JSX.Element => {
-    return <div className={isDisplay ? "loader-slide" : "loader"}></div>;
+    return <div className={isDisplay ? "loader-zoom" : "loader"}></div>;
   };
 
   const projectElements = projectsData
@@ -92,7 +92,7 @@ export default function Projects(): JSX.Element {
       return (
         <div
           key={id}
-          className={isDisplay ? "each-slide-effect" : "project-tile"}
+          className={isDisplay ? "each-zoom-effect" : "project-tile"}
         >
           <div className="top">
             <a target="_blank" href={appURL}>
@@ -155,7 +155,7 @@ export default function Projects(): JSX.Element {
         <div>
           <div className="projectsAll-container">
             <button
-              className="go-slide"
+              className="go-zoom"
               onClick={() => setIsDisplay((prev) => !prev)}
             >
               {isGerman ? "EINZELN ZEIGEN" : "DISPLAY ONE"}

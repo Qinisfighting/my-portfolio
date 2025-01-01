@@ -45,7 +45,7 @@
   }
 }
 
-.loader-slide {
+.loader-zoom {
   margin-left: 34vw;
   width: 28px;
   height: 56px;
@@ -71,8 +71,8 @@
   animation: hypnotic-k56gsf 4s infinite linear;
 }
 
-.loader-slide::before,
-.loader-slide::after {
+.loader-zoom::before,
+.loader-zoom::after {
   content: "";
   grid-area: 1/1;
   background: inherit;
@@ -80,7 +80,7 @@
   animation: inherit;
 }
 
-.loader-slide::after {
+.loader-zoom::after {
   animation-duration: 2s;
 }
 
@@ -200,7 +200,7 @@
   opacity: 1;
 }
 
-/*project list display*/
+/*project all display*/
 
 .projectsAll-container {
   width: 80%;
@@ -213,7 +213,7 @@
   padding: 0;
 }
 
-.go-slide {
+.go-zoom {
   background-color: var(--decoColor);
   color: white;
   width: 140px;
@@ -229,7 +229,7 @@
   font-size: 0.75rem;
 }
 
-.go-slide:hover {
+.go-zoom:hover {
   background-color: #862f4f;
 }
 
@@ -248,21 +248,21 @@
   }
 }
 
-/*project slide display*/
+/*project single display*/
 .projectsDisplay-container {
   width: 70%;
   text-align: center;
   margin: 0 auto 70px;
-  padding: 50px 0 0;
+  padding: 70px 0 0;
 }
 
-.each-slide-effect > div {
+.each-zoom-effect > div {
   padding-top: 35px;
   display: flex;
   justify-content: center;
   align-content: center;
   height: auto;
-  margin: auto;
+  margin: 0;
   position: relative;
 }
 
@@ -306,7 +306,7 @@
     margin: 0 auto 50px;
   }
 
-  .loader-slide {
+  .loader-zoom {
     margin: auto;
   }
 }
