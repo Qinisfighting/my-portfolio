@@ -48,14 +48,14 @@ export default function About() {
                 Denkweise passt.
               </p>
               <p>
-                Darüber hinaus haben drei Jahre Pandemie meine Überzeugung
-                gestärkt, wie essenziell eine effektive E-Produktpräsentation
-                ist, um mit interaktiven und funktionalen Apps Umsatz und
-                Marktanteile zu steigern. Mit meiner umfassenden
-                Vertriebserfahrung und meinen fundierten Kenntnissen in der Web-
-                und Desktop-Entwicklung bin ich bestens darauf vorbereitet,
-                durch stilvolle und funktionale Apps echten Mehrwert zu schaffen
-                und die Ziele meiner Kunden zu erreichen.
+                Zudem haben drei Jahre Pandemie meine Überzeugung von der
+                zentralen Rolle interaktiver und funktionaler Apps für eine
+                effektive Produktpräsentation, die Steigerung der Produktivität
+                sowie das Wachstum von Kunden und die Marktexpansion vertieft.
+                Durch die Kombination meiner umfangreichen Vertriebserfahrung
+                und meiner ausgeprägten Fähigkeiten in der Softwareentwicklung
+                bin ich bestens darauf vorbereitet, Unternehmen und
+                Einzelpersonen dabei zu helfen, ihre Ziele zu erreichen.
               </p>
               <p>
                 In meiner Freizeit reise ich gerne, schaue Filme und lese gerne
@@ -94,13 +94,13 @@ export default function About() {
                 personality and thought process.
               </p>
               <p>
-                Furthermore, three years of the pandemic have reinforced my
-                belief in the critical importance of effective product
-                presentation through interactive and functional apps for driving
-                customer growth and market expansion. By combining my extensive
-                sales experience with my strong web and desktop development
-                skills, I am well-equipped to help businesses and individuals
-                achieve their goals.
+                Moreover, three years of the pandemic have deepened my
+                conviction in the vital role of interactive, functional apps for
+                effective product presentation, boosting productivity, and
+                driving customer growth and market expansion. By leveraging my
+                extensive sales experience and strong software development
+                skills, I am well-prepared to help businesses and individuals
+                achieve their objectives.
               </p>
               <p>
                 In my spare time, I enjoy traveling, watching movies, and
