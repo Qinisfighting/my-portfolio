@@ -226,6 +226,7 @@
   right: 15vw;
   top: 300px;
   letter-spacing: 0.1em;
+  font-size: 0.75rem;
 }
 
 .go-slide:hover {
@@ -278,10 +279,24 @@
   right: 15vw;
   top: 300px;
   letter-spacing: 0.1em;
+  font-size: small;
 }
 
 .all:hover {
   background-color: #862f4f;
+}
+
+.indicator {
+  cursor: pointer;
+  padding: 10px;
+  text-align: center;
+  border: 1px #666 solid;
+  margin: 0;
+}
+
+.indicator.active {
+  color: #fff;
+  background: #666;
 }
 
 @media (max-width: 1000px) {
