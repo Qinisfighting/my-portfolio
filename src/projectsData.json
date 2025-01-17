@@ -90,7 +90,7 @@
     "description_de": "Eine statische Info-Website für eine Fahrschule.",
     "imageUrl": "https://raw.githubusercontent.com/Qinisfighting/my-portfolio/main/src/assets/projects/fahrschule.png",
     "gitURL": "https://github.com/Qinisfighting/fahrschule-am-gymnasium",
-    "appURL": "https://fahrschule-am-gymnasium.info/",
+    "appURL": "https://fahrschule-am-gymnasium.netlify.app/",
     "extra": ""
   },
   {
