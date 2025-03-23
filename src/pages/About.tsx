@@ -115,6 +115,7 @@ export default function About() {
               <span className="tag-span">TypeScript</span>
               <span className="tag-span">React</span>
               <span className="tag-span">Next</span>
+              <span className="tag-span">Python</span>
               <span className="tag-span">SQL</span>
               <span className="tag-span">C#</span>
               <span className="tag-span">.NET</span>
