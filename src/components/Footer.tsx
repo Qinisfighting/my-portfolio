@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import upArrow from "../assets/upArrow.png";
+import write from "../assets/write.png";
 
 export default function Footer() {
   const [isTop, setIsTop] = useState<boolean>(false);
@@ -16,8 +17,10 @@ export default function Footer() {
 
   return (
     <footer>
-      {isTop && (
+      {isTop ? (
         <img src={upArrow} className="go-top" onClick={goTop} alt="toTop" />
+      ) : (
+        <img src={write} className="write" onClick={goTop} alt="write" />
       )}
 
       <h5>
