@@ -14,7 +14,7 @@ footer {
   width: 25px;
   position: fixed;
   right: 30px;
-  bottom: 25px;
+  bottom: 20px;
   cursor: pointer;
   opacity: 0.7;
   filter: drop-shadow(2px 2px 3px #222);
@@ -29,7 +29,7 @@ footer {
   width: 35px;
   position: fixed;
   right: 30px;
-  bottom: 25px;
+  bottom: 20px;
   cursor: pointer;
   opacity: 0.7;
   filter: drop-shadow(2px 2px 3px #222);
