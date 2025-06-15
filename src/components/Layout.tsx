@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import { Outlet, useOutletContext } from "react-router-dom";
+import { RouteProvider } from "../contexts/RouteContext";
 
 type ContextTypeLang = { isGerman: boolean };
 
@@ -16,16 +17,18 @@ export default function Layout() {
   }, [isGerman]);
 
   return (
-    <div className="site-wrapper">
-      <Header
-        isGerman={isGerman}
-        toggleGerman={() => setIsGerman((prev) => !prev)}
-      />
-      <main>
-        <Outlet context={{ isGerman } satisfies ContextTypeLang} />
-      </main>
-      <Footer />
-    </div>
+    <RouteProvider>
+      <div className="site-wrapper">
+        <Header
+          isGerman={isGerman}
+          toggleGerman={() => setIsGerman((prev) => !prev)}
+        />
+        <main>
+          <Outlet context={{ isGerman } satisfies ContextTypeLang} />
+        </main>
+        <Footer />
+      </div>
+    </RouteProvider>
   );
 }
 
