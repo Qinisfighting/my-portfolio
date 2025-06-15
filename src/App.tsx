@@ -13,6 +13,8 @@ import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import Datenschutz from "./pages/Datenschutz";
 import BlogEntry from "./pages/BlogEntry";
+import BlogPage from "./components/Blog/BlogPage";
+import ProtectedRoute from "./contexts/ProtectedRoute";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -24,6 +26,14 @@ const router = createBrowserRouter(
       <Route path="contact" element={<Contact />} />
       <Route path="datenschutz" element={<Datenschutz />} />
       <Route path="blogEntry" element={<BlogEntry />} />
+      <Route
+        path="/blog"
+        element={
+          <ProtectedRoute>
+            <BlogPage />
+          </ProtectedRoute>
+        }
+      />
     </Route>
   )
 );
