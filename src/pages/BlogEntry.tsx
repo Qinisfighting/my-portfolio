@@ -3,6 +3,7 @@ import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../firebase"; // your Firebase init
 import { useNavigate } from "react-router-dom";
 import { useRouteHistory } from "../contexts/RouteContext";
+import mask from "../assets/mask.png"; // your image asset
 
 function BlogEntry() {
   const [pin, setPin] = useState("");
@@ -25,6 +26,7 @@ function BlogEntry() {
   return (
     <div className="entry--container">
       <form className="entry--form" onSubmit={handleLogin}>
+        <img src={mask} alt="mask" className="mask" />
         <input
           className="entry--input"
           type="password"
