@@ -34,7 +34,7 @@ function BlogEntry() {
           placeholder="Host PIN"
         />
         <button type="submit" className="entry--submit">
-          ✽ ENTER ✽
+          ENTER
         </button>
         {error && <p className="entry--error">{error}</p>}
       </form>
